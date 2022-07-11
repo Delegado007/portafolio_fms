@@ -1,13 +1,13 @@
 import React from "react";
-import { Nav, Lista, Li } from './styles'
+import { Nav, Lista, Li, Span } from './styles'
 
 export const NavBar = () => {
   return (
     <Nav>
       <Lista>
-        <Li>Home</Li>
-        <Li>Proyects</Li>
-        <Li>About to me</Li>
+        <Li><Span>Home</Span></Li>
+        <Li><Span>Proyects</Span></Li>
+        <Li><Span>About to me</Span></Li>
       </Lista>
     </Nav>
   );
