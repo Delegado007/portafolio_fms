@@ -50,7 +50,7 @@ export const GlobalStyles = createGlobalStyle`
 .App {
   padding-left: 8rem;
   @media (max-width: 670px) {
-    padding-left: 2rem;
+    padding-left: 0;
   }
 }
 `

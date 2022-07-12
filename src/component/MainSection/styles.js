@@ -11,12 +11,13 @@ export const Article = styled.article`
   padding-left: 3.5rem;
   @media (max-width: 670px) {
     padding-left: 0;
+    justify-content: center;
   }
 `
 export const H1 = styled.h1`
   font-size: 5rem;
   @media (max-width: 670px) {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
 `
 
