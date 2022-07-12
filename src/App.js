@@ -7,8 +7,10 @@ import { GlobalStyles } from './styles/GloglaStyles';
 import particlesOptions from "./particles.json";
 import { MenuVertical } from './component/MenuVertical'
 import { MainSection } from './component/MainSection'
+import { MPlusCodeLatin } from './styles/fontMPlusCode'
 
 function App() {
+  console.log(MPlusCodeLatin);
   const particlesInit = useCallback(main => {
     loadFull(main);
   }, [])

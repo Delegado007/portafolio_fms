@@ -1,45 +1,10 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
+import { MPlusCodeLatin } from './fontMPlusCode';
 
 export const GlobalStyles = createGlobalStyle`
 /* m-plus-code-latin-regular - latin */
-@font-face {
-  font-family: 'M PLUS Code Latin';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/m-plus-code-latin-v6-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../assets/fonts/m-plus-code-latin-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-regular.svg#MPLUSCodeLatin') format('svg'); /* Legacy iOS */
-}
-/* m-plus-code-latin-500 - latin */
-@font-face {
-  font-family: 'M PLUS Code Latin';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../assets/fonts/fonts/m-plus-code-latin-v6-latin-500.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../assets/fonts/m-plus-code-latin-v6-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-500.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-500.svg#MPLUSCodeLatin') format('svg'); /* Legacy iOS */
-}
-/* m-plus-code-latin-700 - latin */
-@font-face {
-  font-family: 'M PLUS Code Latin';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../assets/fonts/m-plus-code-latin-v6-latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../assets/fonts/m-plus-code-latin-v6-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/m-plus-code-latin-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts//m-plus-code-latin-v6-latin-700.svg#MPLUSCodeLatin') format('svg'); /* Legacy iOS */
-}
+  ${MPlusCodeLatin}
+
   html {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -86,3 +51,6 @@ export const GlobalStyles = createGlobalStyle`
   padding-left: 8rem;
 }
 `
+
+
+

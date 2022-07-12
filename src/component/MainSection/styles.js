@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { glitch } from './../../styles/glitchAnimation';
+import { MPlusCodeLatin } from './../../styles/fontMPlusCode';
 
 export const Article = styled.article`
   height: 100vh;
@@ -14,7 +15,8 @@ export const H1 = styled.h1`
 `
 
 export const Span = styled.span`
-  font-weight: bold;
+font-family: 'M PLUS Code Latin';
+  ${MPlusCodeLatin};
   /* letter-spacing: 2px; */
   top: 0;
   left: 0;
