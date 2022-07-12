@@ -15,7 +15,8 @@ export const H1 = styled.h1`
 `
 
 export const Span = styled.span`
-font-family: 'M PLUS Code Latin';
+  font-family: 'M PLUS Code Latin';
+  font-weight: bold;
   ${MPlusCodeLatin};
   /* letter-spacing: 2px; */
   top: 0;
