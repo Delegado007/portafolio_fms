@@ -9,9 +9,15 @@ export const Article = styled.article`
   -webkit-box-align: center;
   align-items: center;
   padding-left: 3.5rem;
+  @media (max-width: 670px) {
+    padding-left: 0;
+  }
 `
 export const H1 = styled.h1`
   font-size: 5rem;
+  @media (max-width: 670px) {
+    font-size: 3rem;
+  }
 `
 
 export const Span = styled.span`
@@ -19,8 +25,6 @@ export const Span = styled.span`
   font-weight: bold;
   ${MPlusCodeLatin};
   /* letter-spacing: 2px; */
-  top: 0;
-  left: 0;
   
   &:hover{
     cursor: pointer;

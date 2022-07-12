@@ -17,6 +17,9 @@ export const Menu = styled.menu`
   align-items: center;
   margin: 0;
   padding: 0;
+  @media (max-width: 670px) {
+    display: none;
+  }
 `
 
 export const Nav = styled.nav`
