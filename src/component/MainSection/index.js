@@ -1,38 +1,38 @@
 import React from "react";
-import { Article, H1 } from './styles'
+import { Article, H1, Span } from './styles'
 
 export const MainSection = () => {
   return (
     <section>
       <Article>
         <H1>
-          <span>H</span>
-          <span>i</span>
-          <span>,</span>
+          <Span>H</Span>
+          <Span>i</Span>
+          <Span>,</Span>
           <br></br>
-          <span>I</span>
-          <span>’</span>
-          <span>m </span>
-          <span>F</span>
-          <span>r</span>
-          <span>a</span>
-          <span>n</span>
-          <span>c</span>
-          <span>o</span>
-          <span>,</span>
+          <Span>I</Span>
+          <Span>’</Span>
+          <Span>m </Span>
+          <Span>F</Span>
+          <Span>r</Span>
+          <Span>a</Span>
+          <Span>n</Span>
+          <Span>c</Span>
+          <Span>o</Span>
+          <Span>,</Span>
           <br></br>
-          <span>W</span>
-          <span>e</span>
-          <span>b </span>
-          <span>D</span>
-          <span>e</span>
-          <span>v</span>
-          <span>e</span>
-          <span>l</span>
-          <span>o</span>
-          <span>p</span>
-          <span>e</span>
-          <span>r</span>
+          <Span>W</Span>
+          <Span>e</Span>
+          <Span>b </Span>
+          <Span>D</Span>
+          <Span>e</Span>
+          <Span>v</Span>
+          <Span>e</Span>
+          <Span>l</Span>
+          <Span>o</Span>
+          <Span>p</Span>
+          <Span>e</Span>
+          <Span>r</Span>
         </H1>
 
       </Article>
