@@ -27,7 +27,21 @@ module.exports = {
       {
         test: /\.png/,
         type: './src/assets'
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              limit: 10000,
+              mimetype: 'application/font-woff',
+            },
+          },
+        ]
       }
+    ]
     ]
   },
   plugins: [

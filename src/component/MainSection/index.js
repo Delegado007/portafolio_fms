@@ -33,6 +33,8 @@ export const MainSection = () => {
           <Span>p</Span>
           <Span>e</Span>
           <Span>r</Span>
+          <Span>.</Span>
+
         </H1>
 
       </Article>
