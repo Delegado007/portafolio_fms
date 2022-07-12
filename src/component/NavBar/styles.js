@@ -2,24 +2,26 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   width: 100%;  
-  justify-content: flex-end;
+  justify-content: center;
   display: flex;
   margin-top: 25px;
-  padding: 0 20px;
 `
 export const Lista = styled.ul`
-  display: inline-flex;  
+  display: inline-flex;
+  padding: 0;
 `
 export const Li = styled.li`
-box-sizing: border-box;
+  display: flex;
+  align-items: center;  
+  box-sizing: border-box;
   position: relative;  
-  padding: 20px;
-  border: 2px solid #A610F7;
-  margin-right: 30px;
-  
+  padding: 10px;
+  margin: 0 10px;
+  border: 2px solid #A610F7;  
   -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
   transition: 0.5s;
   transition-delay: 0s;
+
   &:hover{
     transition-delay: 1.5s;
     color: #000;
@@ -32,10 +34,10 @@ box-sizing: border-box;
   &::before{
     content: '';
     position: absolute;
-    left: -20px;
+    left: -10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px;
+    width: 10px;
     height: 2px;
     background: #A610F7;
     box-shadow: 5px -8px 0 #A610F7,
@@ -55,10 +57,10 @@ box-sizing: border-box;
   &::after{
     content: '';
     position: absolute;
-    right: -20px;
+    right: -10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px;
+    width: 10px;
     height: 2px;
     background: #A610F7;
     box-shadow: -5px -8px 0 #A610F7,
@@ -77,8 +79,11 @@ box-sizing: border-box;
   }
 `
 export const Span = styled.span`
-font-weight: 600;
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: 600;
   letter-spacing: 2px;  
   position: relative;
   z-index: 100;
+  text-transform: uppercase;
 `
