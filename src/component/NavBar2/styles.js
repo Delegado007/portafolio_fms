@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   width: 100%;  
   justify-content: center;
   display: flex;
-  margin-top: 150px;
+  margin-top: 30px;
   padding: 0 20px;
 `
 

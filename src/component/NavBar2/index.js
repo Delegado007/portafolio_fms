@@ -6,9 +6,9 @@ export const NavBar2 = () => {
     <Nav>
       <Lista>
         <Li>
-          <Span aria-hidden="true">Home</Span>
-          Home
-          <Span aria-hidden="true">Home</Span>
+          <Span aria-hidden="true">About to me</Span>
+          About to me
+          <Span aria-hidden="true">About to me</Span>
         </Li>
         <Li>
           <Span aria-hidden="true">Proyects</Span>
@@ -16,9 +16,9 @@ export const NavBar2 = () => {
           <Span aria-hidden="true">Proyects</Span>
         </Li>
         <Li>
-          <Span aria-hidden="true">CV</Span>
-          CV
-          <Span aria-hidden="true">CV</Span>
+          <Span aria-hidden="true">Resume</Span>
+          Resume
+          <Span aria-hidden="true">Resume</Span>
         </Li>
       </Lista>
     </Nav>

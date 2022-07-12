@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #111111;
+    background-color: #1d1d1d;
     height: 100vh;
     margin: 0px;
     width: 100%;
@@ -43,5 +43,7 @@ export const GlobalStyles = createGlobalStyle`
     top: 0;
     z-index: -1;
 }
-
+.App {
+  padding-left: 8rem;
+}
 `
