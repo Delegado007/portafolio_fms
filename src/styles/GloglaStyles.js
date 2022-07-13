@@ -6,8 +6,8 @@ export const GlobalStyles = createGlobalStyle`
   ${MPlusCodeLatin}
 
   html {
+    font-family: 'M PLUS Code Latin';
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   ::-webkit-scrollbar {
     display: none;
