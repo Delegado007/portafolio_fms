@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Menu, Nav, Lista, Li, Span } from "./styles";
+import { DelegadoContext } from './../../context/index'
 
 export const MenuVertical = () => {
+  const { open } = useContext(DelegadoContext)
   return (
-    <Menu>
+    <Menu open={open}>
       <Lista>
         <Li>
           <Span>About to me</Span>

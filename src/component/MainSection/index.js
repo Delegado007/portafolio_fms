@@ -17,7 +17,7 @@ export const MainSection = () => {
         </H1>
         <H1>
           <Span aria-hidden="true">,</Span>
-          ,&nbsp;
+          ,
           <Span aria-hidden="true">,</Span>
         </H1>
       </Article>
@@ -33,9 +33,9 @@ export const MainSection = () => {
           <Span aria-hidden="true">’</Span>
         </H1>
         <H1>
-          <Span aria-hidden="true">m</Span>
+          <Span aria-hidden="true">m </Span>
           m&nbsp;
-          <Span aria-hidden="true">m</Span>
+          <Span aria-hidden="true">m </Span>
         </H1>
         <H1>
           <Span aria-hidden="true">F</Span>

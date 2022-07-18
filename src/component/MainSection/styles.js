@@ -9,7 +9,7 @@ export const Section = styled.section`
   justify-content: center;
   padding-left: 2rem;
   @media (max-width: 670px) {
-    padding-left: 2rem;
+    padding-right: 1rem;
   }
 `
 
@@ -42,7 +42,7 @@ export const H1 = styled.h1`
     }  
   }
   @media (max-width: 670px) {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
 `
 
@@ -55,6 +55,6 @@ font-size: 4.5rem;
   font-weight: bold;
   /* letter-spacing: 2px; */
   @media (max-width: 670px) {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }  
 `
