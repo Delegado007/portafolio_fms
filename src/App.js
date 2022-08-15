@@ -9,6 +9,7 @@ import { MenuVertical } from './component/MenuVertical'
 import { MainSection } from './component/MainSection'
 import { MPlusCodeLatin } from './styles/fontMPlusCode'
 import { DelegadoProvider } from './context/index'
+import { ProjectsGrid } from './component/ProjectsGrid'
 
 function App() {
   console.log(MPlusCodeLatin);
@@ -25,6 +26,7 @@ function App() {
           <Particles options={particlesOptions} init={particlesInit} />
           <Burguer />
           <MainSection />
+          <ProjectsGrid />
         </div>
       </DelegadoProvider>
     </>
