@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { glitch } from './../../styles/glitchAnimation';
+import { glitch } from '@styles/glitchAnimation';
 
 export const Nav = styled.nav`
   width: 100%;  

@@ -8,6 +8,8 @@ export const Section = styled.section`
   align-items: flex-start;
   justify-content: center;
   padding-left: 2rem;
+  max-width: 1200px;
+  margin: auto;
   @media (max-width: 670px) {
     padding-right: 1rem;
   }

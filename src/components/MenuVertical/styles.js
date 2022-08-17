@@ -26,7 +26,6 @@ export const Menu = styled.menu`
     width: 100%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-
   }
 `
 
@@ -49,6 +48,9 @@ export const Lista = styled.ul`
   -webkit-box-align: center;
   align-items: center;
   border-top: 1px solid #282828;
+  @media (max-width: 670px) {
+    border: 1px solid #282828;
+  }
 `
 
 export const Li = styled.li`
@@ -62,6 +64,7 @@ export const Li = styled.li`
   font-size: 1rem;
   font-weight: bold;
   /* letter-spacing: 2px; */
+ 
   
 `
 
@@ -76,7 +79,10 @@ export const Span = styled.span`
   &:hover{
     color: #08fdb3;
     cursor: pointer;   
-  }  
+  }
+  @media (max-width: 670px) {
+    font-size: 1.25rem;
+  } 
 `
 
 

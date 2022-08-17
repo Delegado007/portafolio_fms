@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
-import { Menu, Nav, Lista, Li, Span } from "./styles";
-import { DelegadoContext } from './../../context/index'
+import React from "react";
+import { Menu, Lista, Li, Span } from "./styles";
 
-export const MenuVertical = () => {
-  const { open } = useContext(DelegadoContext)
+export const MenuVertical = ({ open }) => {
+  console.log("MenuVertical");
   return (
     <Menu open={open}>
       <Lista>

@@ -2,6 +2,7 @@ import React from "react";
 import { Article, H1, Span, Section } from './styles'
 
 export const MainSection = () => {
+  console.log("MainSection");
   return (
     <Section>
       <Article>
