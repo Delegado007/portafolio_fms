@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { glitch } from './../../styles/glitchAnimation';
+import 'animate.css'
+
 
 export const Section = styled.section`
   height: 100vh;
@@ -13,11 +15,15 @@ export const Section = styled.section`
   @media (max-width: 670px) {
     padding-right: 1rem;
   }
+ 
 `
 
 export const Article = styled.article`  
   overflow: hidden;
   display: flex; 
+  & {
+    animation-duration: 1.1s;
+  }
 `
 export const H1 = styled.h1`
   position: relative;  
@@ -31,14 +37,14 @@ export const H1 = styled.h1`
     & span:first-child{
       animation: ${glitch} 650ms infinite;
       clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-      transform: translate(-0.025em, -0.0125em);
+      transform: translate(-0.015em, -0.0125em);
       /* color: green; */
       opacity: 0.8;
     }
     & span:last-child{
       animation: ${glitch} 375ms infinite;
       clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-      transform: translate(0.025em, 0.025em);
+      transform: translate(0.015em, 0.018em);
       /* color: red; */
       opacity: 0.8;
     }  

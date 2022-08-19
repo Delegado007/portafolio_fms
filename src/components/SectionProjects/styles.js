@@ -10,6 +10,12 @@ const spacingXl = "32px";
 const spacingXxl = "64px";
 const widthContainer = "1200px";
 
+export const Section = styled.section`
+  display: block;
+  position: relative;
+  background-color: #1d1d1d;
+`
+
 export const Container = styled.div`
   font-family: 'Montserrat', sans-serif;
   align-items: flex-start;
@@ -45,6 +51,9 @@ export const Card = styled.div`
   margin: 0 auto;
   padding-bottom: 150%;
   width: 100%;
+  & {
+    animation-duration: 3.1s;
+  }
   &:hover .card__background{
   transform: scale(1.05) translateZ(0);
   }
@@ -54,7 +63,6 @@ export const Card = styled.div`
 `
 
 export const CardBackground = styled.div`
-  background-image: url("https://elcomercio.pe/resizer/9Wd041tOZfS4K71f5e0fWvtyzOI=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/NBHICKXFIFHPVJJE4G2TDDNMJQ.jpg");
   background-size: cover;
   background-position: center;
   border-radius: ${spacingL};

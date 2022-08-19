@@ -12,10 +12,7 @@ export const GlobalStyles = createGlobalStyle`
   ::-webkit-scrollbar {
     display: none;
   }      
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
-        
+          
   ul, li, h1, h2, h3, p, button {
     margin: 0;
   }
@@ -37,16 +34,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     color: white;
   }
-  #tsparticles {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
+  
 .App {
   padding-left: 8rem;
   @media (max-width: 670px) {

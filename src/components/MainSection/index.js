@@ -1,11 +1,12 @@
 import React from "react";
 import { Article, H1, Span, Section } from './styles'
 
+
 export const MainSection = () => {
   console.log("MainSection");
   return (
-    <Section>
-      <Article>
+    <Section >
+      <Article className="animate__rubberBand">
         <H1>
           <Span aria-hidden="true">H</Span>
           H
@@ -22,7 +23,7 @@ export const MainSection = () => {
           <Span aria-hidden="true">,</Span>
         </H1>
       </Article>
-      <Article>
+      <Article className="animate__rubberBand">
         <H1>
           <Span aria-hidden="true">I</Span>
           I
@@ -69,7 +70,7 @@ export const MainSection = () => {
           <Span aria-hidden="true">o</Span>
         </H1>
       </Article>
-      <Article>
+      <Article className="animate__rubberBand">
         <H1>
           <Span aria-hidden="true">W</Span>
           W
