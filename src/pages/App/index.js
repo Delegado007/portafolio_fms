@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Burguer } from '@components/burguer/index'
 import { MenuVertical } from '@components/MenuVertical'
-import { ContainerProjects } from '@components/SectionProjects'
+import { ListOfProjects } from '@components/ListOfProjects'
 import { ParticlesComponent } from '@components/Particles'
 
 
@@ -18,7 +18,7 @@ export const App = () => {
       <div className="App">
         <ParticlesComponent />
         <Burguer open={open} />
-        <ContainerProjects />
+        <ListOfProjects />
       </div>
     </>
   );
