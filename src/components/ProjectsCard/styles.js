@@ -19,7 +19,7 @@ export const Card = styled.div`
   padding-bottom: 150%;
   width: 100%;
   & {
-    animation-duration: 3.1s;
+    animation-duration: 1s;
   }
   &:hover .card__background{
   transform: scale(1.05) translateZ(0);

@@ -15,7 +15,7 @@ export const ProjectCard = ({ category, heading, background }) => {
   return (
     <div ref={element}>
       {show &&
-        <Card className="card animate__bounceInUp">
+        <Card className="card animate__fadeInUp">
           <CardBackground className="card__background" style={{ backgroundImage: `url(${background})` }} />
           <CardContent className="card__content">
             <CardCategory className="card__category">{category}</CardCategory>
