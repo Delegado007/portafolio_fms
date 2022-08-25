@@ -92,8 +92,8 @@ export const CardFooter = styled.div`
     margin-top: ${spacingS};
     background-color: ${backgroundColor};
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 3rem;
+    height: 3rem;
   }
 `
 export const Button = styled.button`
