@@ -18,8 +18,9 @@ export const Card = styled.div`
   content: '';
   display: block;
   margin: 0 auto;
-  padding-bottom: 150%;
+  height: 530px;
   width: 100%;
+  max-width: 330px;
   & {
     animation-duration: 1s;
   }
@@ -52,7 +53,7 @@ export const CardBackground = styled.div`
     height: 100%;
     transition: 2s;
     &:hover {
-      transform: translateX(-41%);
+      transform: translateX(-46%);
     }
   }
 `

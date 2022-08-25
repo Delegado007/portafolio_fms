@@ -7,7 +7,6 @@ export const ProjectCard = ({ category, heading, background }) => {
   const [indexImg, setIndexImg] = useState(0);
   const [show, element] = useNearScreen()
   const handleImgChange = (index) => {
-    console.log(index);
     setIndexImg(index);
   }
   console.log(show)
@@ -27,7 +26,7 @@ export const ProjectCard = ({ category, heading, background }) => {
           <CardFooter>
             {background.map((img, index) => {
               return (
-                <div>
+                <div key={index}>
                   <Button onClick={() => handleImgChange(index)}>
                     <h2>
                       {index + 1}
