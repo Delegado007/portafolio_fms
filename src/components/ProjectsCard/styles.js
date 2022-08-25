@@ -9,6 +9,8 @@ const spacingL = "24px";
 const spacingXl = "32px";
 const spacingXxl = "64px";
 const widthContainer = "1200px";
+const backgroundColor = "#1d1d1d";
+const colorParticle = "#ffa500";
 
 
 export const Card = styled.div`
@@ -63,16 +65,36 @@ export const CardContent = styled.div`
 `
 
 export const CardCategory = styled.p`
-  color: ${textLight};
+  color: ${colorParticle};
   font-size: 0.9rem;
   margin-bottom: ${spacingS};
   text-transform: uppercase;
 `
 
 export const CardHeading = styled.h3`
-  color: ${textLighter};
+  color: ${colorParticle};
   font-size: 1.9rem;
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
   word-spacing: 100vw;
+`
+
+export const CardFooter = styled.div`
+  left: 0;
+  margin: ${spacingL};
+  position: absolute;
+  bottom: 0;
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: ${spacingS};
+    background-color: ${backgroundColor};
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+`
+export const Button = styled.button`
+  color: white;
 `
