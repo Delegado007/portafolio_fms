@@ -7,22 +7,22 @@ export const ListOfProjects = () => {
     {
       cardCategory: "Ruadis Librería",
       cardHeading: "Example Card Heading",
-      background: "assets/car1.jpg"
+      background: ["assets/captures/ruadis1.png", "assets/captures/ruadis2.png", "assets/captures/ruadis3.png"]
     },
     {
       cardCategory: "Petgram",
       cardHeading: "Example Card Heading",
-      background: "assets/car2.jpg"
+      background: ["assets/captures/petgram1.png", "assets/captures/petgram2.png", "assets/captures/petgram3.png"]
     },
     {
       cardCategory: "Pokedux",
       cardHeading: "Example Card Heading",
-      background: "assets/car3.jpg"
+      background: ["assets/captures/pokedux1.png", "assets/captures/pokedux2.png"]
     },
     {
       cardCategory: "OyeMusica",
       cardHeading: "Example Card Heading",
-      background: "assets/car4.jpg"
+      background: ["assets/captures/oyemusica1.png", "assets/captures/oyemusica2.png"]
     }
   ];
 

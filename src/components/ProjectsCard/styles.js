@@ -23,6 +23,7 @@ export const Card = styled.div`
   }
   &:hover .card__background{
   transform: scale(1.05) translateZ(0);
+  filter: brightness(1) contrast(1);
   }
   /* &:hover + .card:not(:hover) .card__background{
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
@@ -34,7 +35,7 @@ export const CardBackground = styled.div`
   background-position: center;
   border-radius: ${spacingL};
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  filter: brightness(0.85) contrast(0.90);
   left: 0;
   position: absolute;
   right: 0;
@@ -44,6 +45,14 @@ export const CardBackground = styled.div`
   transition: 
     filter 200ms linear,
     transform 200ms linear;
+  overflow: hidden;
+  & img {
+    height: 100%;
+    transition: 2s;
+    &:hover {
+      transform: translateX(-41%);
+    }
+  }
 `
 
 export const CardContent = styled.div`
