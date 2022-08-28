@@ -90,12 +90,18 @@ export const CardFooter = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: ${spacingS};
-    background-color: ${backgroundColor};
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    
   }
 `
 export const Button = styled.button`
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #32303F;
   color: white;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  &.active {
+    background-color: #00A97F;
+  }
 `

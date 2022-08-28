@@ -4,8 +4,7 @@ import { Burguer } from '@components/burguer/index'
 import { MenuVertical } from '@components/MenuVertical'
 import { ListOfProjects } from '@components/ListOfProjects'
 import { ParticlesComponent } from '@components/Particles'
-
-
+import { ContactForm } from '@components/ContactForm'
 import { GlobalStyles } from '@styles/GloglaStyles';
 
 export const App = () => {
@@ -19,6 +18,7 @@ export const App = () => {
         <ParticlesComponent />
         <Burguer open={open} />
         <ListOfProjects />
+        <ContactForm />
       </div>
     </>
   );
