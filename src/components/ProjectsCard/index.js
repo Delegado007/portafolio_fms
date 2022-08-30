@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Card, CardBackground, CardContent, CardCategory, CardHeading, CardFooter, Button } from './styles'
 import { useNearScreen } from '@hoocks/useNearScreen';
 
-// import './stylesCSS.css';
 export const ProjectCard = ({ id, category, heading, background }) => {
   const [indexImg, setIndexImg] = useState(0);
   const [show, element] = useNearScreen()
@@ -30,7 +29,7 @@ export const ProjectCard = ({ id, category, heading, background }) => {
   }
 
   console.log("ContainerProjects")
-  // style={{ backgroundImage: `url(${background})` }}
+
   return (
     <div ref={element}>
       {show &&

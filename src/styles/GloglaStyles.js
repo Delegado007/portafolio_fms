@@ -13,8 +13,9 @@ export const GlobalStyles = createGlobalStyle`
     display: none;
   }      
           
-  ul, li, h1, h2, h3, p, button {
+  ul, li, h1, h2, h3, p, button, input, textarea {
     margin: 0;
+    padding: 0;
   }
 
   ul {

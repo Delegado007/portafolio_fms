@@ -14,6 +14,7 @@ export const Section = styled.section`
   display: block;
   position: relative;
   background-color: #1d1d1d;
+  margin-bottom: 90px;
 `
 
 export const Container = styled.div`
@@ -40,6 +41,6 @@ export const CardGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
   &:hover .card:not(:hover) .card__background{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(5px);
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(4px);
   }
 `

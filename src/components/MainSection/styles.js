@@ -9,13 +9,12 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 2rem;
+  padding: 0 24px 0 24px;
   max-width: 1200px;
   margin: auto;
   @media (max-width: 670px) {
     padding-right: 1rem;
-  }
- 
+  } 
 `
 
 export const Article = styled.article`  
@@ -25,6 +24,7 @@ export const Article = styled.article`
     animation-duration: 1.1s;
   }
 `
+
 export const H1 = styled.h1`
   position: relative;  
   font-size: 4.5rem;
