@@ -14,7 +14,7 @@ export const MenuVertical = ({ open }) => {
       </ProfilePicture>
       <Lista>
         <Li>
-          <Span>About to me</Span>
+          <Span>About me</Span>
         </Li>
         <Li>
           <Span>Proyects</Span>

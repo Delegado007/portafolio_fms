@@ -6,25 +6,26 @@ export const ListOfProjects = () => {
   const rederProjects = [
     {
       id: 1,
-      cardCategory: "",
+      cardCategory: "Front End",
       cardHeading: "Ruadis Librería",
+      resume: "Un proyecto Freelance desarrollado con el propósito de suplir una necesidad de poder dar acceso remoto a los clientes al repositorio de libros y mercadería que se encuentran disponibles a la venta.",
       background: ["assets/captures/ruadis1.png", "assets/captures/ruadis2.png", "assets/captures/ruadis3.png"]
     },
     {
       id: 2,
-      cardCategory: "",
+      cardCategory: "Front End",
       cardHeading: "Petgram",
       background: ["assets/captures/petgram1.png", "assets/captures/petgram2.png", "assets/captures/petgram3.png"]
     },
     {
       id: 3,
-      cardCategory: "",
+      cardCategory: "Front End",
       cardHeading: "Pokedux",
       background: ["assets/captures/pokedux1.png", "assets/captures/pokedux2.png"]
     },
     {
       id: 4,
-      cardCategory: "",
+      cardCategory: "Front End",
       cardHeading: "OyeMusica",
       background: ["assets/captures/oyemusica1.png", "assets/captures/oyemusica2.png"]
     }
@@ -41,6 +42,7 @@ export const ListOfProjects = () => {
               category={project.cardCategory}
               heading={project.cardHeading}
               background={project.background}
+              resume={project.resume}
             />
           ))}
         </CardGrid>

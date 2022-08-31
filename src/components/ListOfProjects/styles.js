@@ -13,7 +13,7 @@ const widthContainer = "1200px";
 export const Section = styled.section`
   display: block;
   position: relative;
-  background-color: #1d1d1d;
+  background-color: transparent;
   margin-bottom: 90px;
 `
 
@@ -33,6 +33,7 @@ export const CardGrid = styled.div`
   grid-row-gap: ${spacingL};
   max-width: ${widthContainer};
   width: 100%;
+  
   @media(min-width: 540px){  
     grid-template-columns: repeat(2, 1fr); 
   
@@ -40,7 +41,7 @@ export const CardGrid = styled.div`
   @media(min-width: 960px){  
     grid-template-columns: repeat(3, 1fr);
   }
-  &:hover .card:not(:hover) .card__background{
+  /* &:hover .card:not(:hover) .card__background{
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(4px);
-  }
+  } */
 `

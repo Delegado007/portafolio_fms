@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Card, CardBackground, CardContent, CardCategory, CardHeading, CardFooter, Button } from './styles'
+import { Card, CardBackground, CardContent, CardCategory, CardHeading, CardFooter, Button, CardOverlay } from './styles'
 import { useNearScreen } from '@hoocks/useNearScreen';
 
-export const ProjectCard = ({ id, category, heading, background }) => {
+export const ProjectCard = ({ id, category, heading, background, resume }) => {
   const [indexImg, setIndexImg] = useState(0);
   const [show, element] = useNearScreen()
 
@@ -37,10 +37,15 @@ export const ProjectCard = ({ id, category, heading, background }) => {
           <CardBackground className="card__background" >
             <img src={background[indexImg]}></img>
           </CardBackground>
+          <CardOverlay className="card__overlay" />
           <CardContent className="card__content">
             {/* <CardCategory className="card__category">{category}</CardCategory>
             <CardHeading className="card__heading">{heading}</CardHeading> */}
+            <h1>{heading}</h1>
+            <p>{resume}</p>
           </CardContent>
+
+
           <CardFooter>
             {background.map((img, index) => {
               return (
