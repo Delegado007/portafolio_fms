@@ -1,6 +1,6 @@
 import React from "react";
 import { useNearScreen } from '@hoocks/useNearScreen';
-import { ContainerGridForm, ContactIn, Article, H2, Span, ContactMap, Form, InputText, TextArea, InputButton } from "./styles";
+import { ContainerGridForm, ContactIn, Article, H2, Span, ContactMap, Form, ContainerInput, InputText, TextArea, InputButton } from "./styles";
 
 
 export const ContactForm = () => {
@@ -50,21 +50,33 @@ export const ContactForm = () => {
                   <Span aria-hidden="true">t</Span>
                 </H2>
                 <H2>
-                  <Span aria-hidden="true">u</Span>
-                  u
-                  <Span aria-hidden="true">u</Span>
+                  <Span aria-hidden="true">m</Span>
+                  m
+                  <Span aria-hidden="true">m</Span>
                 </H2>
                 <H2>
-                  <Span aria-hidden="true">s</Span>
-                  s
-                  <Span aria-hidden="true">s</Span>
+                  <Span aria-hidden="true">e</Span>
+                  e
+                  <Span aria-hidden="true">e</Span>
                 </H2>
               </Article>
               <form className="animate__fadeInUp">
-                <InputText type="text" placeholder="Name" />
-                <InputText type="text" placeholder="Name" />
-                <TextArea placeholder="Message" ></TextArea>
-                <InputButton type="submit">Send</InputButton>
+                <ContainerInput>
+                  <InputText id="input0" type="text" required />
+                  <label for="input0" >Name</label>
+                  <span class="underline"></span>
+                </ContainerInput>
+                <ContainerInput>
+                  <InputText id="input1" type="text" required />
+                  <label for="input1" >Email</label>
+                  <span class="underline"></span>
+                </ContainerInput>
+                <ContainerInput>
+                  <TextArea id="input2" required ></TextArea>
+                  <label for="input2" >Message</label>
+                  <span class="underline"></span>
+                </ContainerInput>
+                <InputButton type="submit"><span>Send Message</span></InputButton>
               </form>
             </>
           }
