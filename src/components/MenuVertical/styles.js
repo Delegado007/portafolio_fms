@@ -10,7 +10,7 @@ export const Menu = styled.menu`
   right: auto;
   bottom: 0;
   display: flex;
-  z-index: 3;
+  z-index: 1001;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,9 +46,9 @@ export const Lista = styled.ul`
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  border-top: 1px solid #282828;
+  
   @media (max-width: 670px) {
-    border: 1px solid #282828;
+    
   }
 `
 
@@ -63,6 +63,9 @@ export const Li = styled.li`
   font-size: 1rem;
   font-weight: bold;
   /* letter-spacing: 2px; */
+  &:first-child{
+    border-top: 1px solid #282828;
+  }
  
   
 `
@@ -82,6 +85,48 @@ export const Span = styled.span`
   @media (max-width: 670px) {
     font-size: 1.25rem;
   } 
+`
+
+
+export const ProfilePicture = styled.div`
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+  height: 180px;
+  width: 100%;
+  & img {
+    width: 8rem;
+    filter: contrast(1.5) grayscale(0.8) sepia(0.6);
+  }
+  @media (max-width: 670px) {
+    display: none;
+  }
+  @media (max-height: 670px) {
+    display: none;
+  }
+  `
+
+export const LinksSVG = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 50px;
+  @media (max-width: 670px) {
+    max-width: 128px;
+    position: relative;
+    justify-content: center;    
+    & svg {
+      margin: 25px 20px 0;
+    }
+  }
+  & svg {
+    cursor: pointer;
+    width: 30px;
+    padding-bottom: 20px;
+    fill: white;
+  }
 `
 
 

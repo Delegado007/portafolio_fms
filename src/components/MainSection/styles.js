@@ -12,6 +12,7 @@ export const Section = styled.section`
   padding: 0 24px 0 24px;
   max-width: 1200px;
   margin: auto;
+  
   @media (max-width: 670px) {
     padding-right: 1rem;
   } 
@@ -26,7 +27,8 @@ export const Article = styled.article`
 `
 
 export const H1 = styled.h1`
-  position: relative;  
+  position: relative;
+  z-index: 1000;
   font-size: 4.5rem;
   &:hover{
     cursor: pointer;

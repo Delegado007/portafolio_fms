@@ -6,7 +6,7 @@ export const StyledBurger = styled.div`
   position: fixed;
   top: 15px;
   right: 20px;
-  z-index: 20;
+  z-index: 1002;
   display: none;
 
   @media (max-width: 670px) {
