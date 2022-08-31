@@ -60,24 +60,24 @@ export const ContactForm = () => {
                   <Span aria-hidden="true">e</Span>
                 </H2>
               </Article>
-              <form className="animate__fadeInUp">
+              <div className="animate__fadeInUp">
                 <ContainerInput>
                   <InputText id="input0" type="text" required />
-                  <label for="input0" >Name</label>
-                  <span class="underline"></span>
+                  <label htmlFor="input0" >Name</label>
+                  <span className="underline"></span>
                 </ContainerInput>
                 <ContainerInput>
                   <InputText id="input1" type="text" required />
-                  <label for="input1" >Email</label>
-                  <span class="underline"></span>
+                  <label htmlFor="input1" >Email</label>
+                  <span className="underline"></span>
                 </ContainerInput>
                 <ContainerInput>
                   <TextArea id="input2" required ></TextArea>
-                  <label for="input2" >Message</label>
-                  <span class="underline"></span>
+                  <label htmlFor="input2" >Message</label>
+                  <span className="underline"></span>
                 </ContainerInput>
                 <InputButton type="submit"><span>Send Message</span></InputButton>
-              </form>
+              </div>
             </>
           }
         </Form>

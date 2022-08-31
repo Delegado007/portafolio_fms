@@ -94,6 +94,7 @@ export const CardFooter = styled.div`
   }
 `
 export const Button = styled.button`
+  cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
   background-color: #32303F;

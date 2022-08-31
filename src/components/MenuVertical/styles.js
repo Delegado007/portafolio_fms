@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { glitch } from './../../styles/glitchAnimation';
 
 export const Menu = styled.menu`
   width: 8rem;
