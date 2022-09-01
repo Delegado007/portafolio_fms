@@ -317,102 +317,53 @@ cursor: pointer;
 }
 `
 
-  export const GoSite = styled.button`
-    width: 120px;
-    height: 50px;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    font-size: 1.5rem;
-    bottom: 24px;
-    right: calc(50% - 60px);
-    background-image: linear-gradient(#464d55, #25292e);
-    border-radius: 5px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    color: #EBEBEB;
-    z-index: 200;
-    &:hover .card__overlay {
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      box-shadow: none;
-      border-radius: 1rem;
-      opacity: 0.99;
-    }
-  `
-  export const Button = styled.button`
-    cursor: pointer;
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-image: linear-gradient(#272727, #222);
-    color: white;
-    border-radius: 0 50% 0.5rem 0rem;
-    width: 3rem;
-    height: 3rem;    
-    border-width: 0;
-    box-shadow: rgba(56, 56, 56, 0.4) 0 2px 4px,rgba(46, 46, 46, 0.3) 0 7px 13px -3px,#080808 0 -3px 0 inset;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow,transform;
-    &.active {
-      background-image: linear-gradient(#009B6D, #008C69);
-      box-shadow: #343434 0 3px 7px inset;
-      transform: translateY(2px);
-    }
-  `
+export const GoSite = styled.button`
+  width: 120px;
+  height: 50px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 24px;
+  right: calc(50% - 60px);
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 5px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #EBEBEB;
+  z-index: 200;
+  &:hover .card__overlay {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 1rem;
+    opacity: 0.99;
+  }
+`
 
-  
-  // <!-- HTML !-->
-  // <button class="button-30" role="button">Button 30</button>
-  
-// /* CSS */
-// .button-30 {
-  //   align-items: center;
-  //   appearance: none;
-  //   background-color: #FCFCFD;
-  //   border-radius: 4px;
-  //   border-width: 0;
-  //   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#252525 0 -3px 0 inset;
-  //   box-sizing: border-box;
-//   color: #36395A;
-//   cursor: pointer;
-//   display: inline-flex;
-//   font-family: "JetBrains Mono",monospace;
-//   height: 48px;
-//   justify-content: center;
-//   line-height: 1;
-//   list-style: none;
-//   overflow: hidden;
-//   padding-left: 16px;
-//   padding-right: 16px;
-//   position: relative;
-//   text-align: left;
-//   text-decoration: none;
-//   transition: box-shadow .15s,transform .15s;
-//   user-select: none;
-//   -webkit-user-select: none;
-//   touch-action: manipulation;
-//   white-space: nowrap;
-//   will-change: box-shadow,transform;
-//   font-size: 18px;
-// }
-
-// .button-30:focus {
-//   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-// }
-
-// .button-30:hover {
-//   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-//   transform: translateY(-2px);
-// }
-
-// .button-30:active {
-//   box-shadow: #D6D6E7 0 3px 7px inset;
-//   transform: translateY(2px);
-// }
+export const Button = styled.button`
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(#272727, #222);
+  color: white;
+  border-radius: 0 50% 0.5rem 0rem;
+  width: 3rem;
+  height: 3rem;    
+  border-width: 0;
+  box-shadow: rgba(56, 56, 56, 0.4) 0 2px 4px,rgba(46, 46, 46, 0.3) 0 7px 13px -3px,#080808 0 -3px 0 inset;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  &.active {
+    background-image: linear-gradient(#009B6D, #008C69);
+    box-shadow: #343434 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+`
