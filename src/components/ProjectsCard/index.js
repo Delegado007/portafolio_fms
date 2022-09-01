@@ -5,7 +5,7 @@ import rocket from '@assets/rocket.png';
 import code from '@assets/code.png';
 
 
-export const ProjectCard = ({ id, category, heading, background, resume, urlSite }) => {
+export const ProjectCard = ({ id, category, heading, background, resume, urlSite, urlCode }) => {
   const [indexImg, setIndexImg] = useState(0);
   const [show, element] = useNearScreen()
 
@@ -65,7 +65,7 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
             })}
 
           </CardFooter>
-          <ButtonCode onClick={() => { window.open(`${urlSite}`, '_blank') }} ><img src={code} /></ButtonCode>
+          <ButtonCode onClick={() => { window.open(`${urlCode}`, '_blank') }} ><img src={code} /></ButtonCode>
           <ButtonDeploy onClick={() => { window.open(`${urlSite}`, '_blank') }} ><img src={rocket} /></ButtonDeploy>
         </Card>
       }
