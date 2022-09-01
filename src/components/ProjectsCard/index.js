@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Card, CardBackground, CardContent, CardCategory, CardHeading, CardFooter, Button, CardOverlay, GoSite, ButtonDeploy, ButtonCode } from './styles'
+import { Card, CardBackground, CardContent, CardFooter, Button, CardOverlay, ButtonDeploy, ButtonCode } from './styles'
 import { useNearScreen } from '@hoocks/useNearScreen';
-import rocket from '@assets/rocket.png';
-import code from '@assets/code.png';
+import rocket from './assets/rocket.png';
+import code from './assets/code.png';
 
 
 export const ProjectCard = ({ id, category, heading, background, resume, urlSite, urlCode }) => {
