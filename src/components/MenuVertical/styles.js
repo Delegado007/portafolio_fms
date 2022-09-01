@@ -70,7 +70,7 @@ export const Li = styled.li`
   
 `
 
-export const Span = styled.span`  
+export const Span = styled.a`  
   width: 8rem;
   text-align: center;
   margin: 0 auto;
@@ -78,6 +78,9 @@ export const Span = styled.span`
   font-weight: bold;
   top: 0;
   left: 0;
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
   &:hover{
     color: #08fdb3;
     cursor: pointer;   

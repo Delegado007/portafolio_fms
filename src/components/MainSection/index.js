@@ -5,7 +5,7 @@ import { Article, H1, Span, Section } from './styles'
 export const MainSection = () => {
   console.log("MainSection");
   return (
-    <Section >
+    <Section id="main_section">
       <Article className="animate__rubberBand">
         <H1>
           <Span aria-hidden="true">H</Span>

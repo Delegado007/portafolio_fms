@@ -15,6 +15,7 @@ export const Section = styled.section`
   position: relative;
   background-color: transparent;
   margin-bottom: 90px;
+  min-height: 1200px;
 `
 
 export const Container = styled.div`

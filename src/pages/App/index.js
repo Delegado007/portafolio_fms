@@ -5,7 +5,6 @@ import { MenuVertical } from '@components/MenuVertical'
 import { ListOfProjects } from '@components/ListOfProjects'
 import { ParticlesComponent } from '@components/Particles'
 import { ContactForm } from '@components/ContactForm'
-import { BacgroundGradient } from '../../templates/BackgroundGradient';
 import { GlobalStyles } from '@styles/GloglaStyles';
 
 export const App = () => {
@@ -18,9 +17,8 @@ export const App = () => {
       <div className="App">
         <ParticlesComponent />
         <Burguer open={open} />
-
-        <BacgroundGradient>
-        </BacgroundGradient>
+        <ListOfProjects />
+        <ContactForm />
       </div>
     </>
   );

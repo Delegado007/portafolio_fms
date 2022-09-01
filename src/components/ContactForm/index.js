@@ -8,7 +8,7 @@ export const ContactForm = () => {
   const [showMap, map] = useNearScreen()
   console.log(showMap)
   return (
-    <ContainerGridForm>
+    <ContainerGridForm id="contact_form">
       <ContactIn>
         <Form ref={form}>
           {showForm &&
@@ -76,7 +76,7 @@ export const ContactForm = () => {
                   <label htmlFor="input2" >Message</label>
                   <span className="underline"></span>
                 </ContainerInput>
-                <InputButton type="submit"><span>Send Message</span></InputButton>
+                <InputButton type="submit" ><span>Send Message</span></InputButton>
               </div>
             </>
           }

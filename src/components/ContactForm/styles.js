@@ -2,19 +2,23 @@ import styled from "styled-components";
 import { glitch } from './../../styles/glitchAnimation';
 
 export const ContainerGridForm = styled.div`
+  min-height: 500px;
+  
+  
   
 `
 
 export const ContactIn = styled.div`
   display: grid;
+  align-self: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   max-width: 1200px;
-  height: auto;
-  margin: auto;
-  padding: 0 24px 64px 24px;
+  height: 100%;
+ 
+  padding: 0 24px 100px;
   /* box-shadow: 0px 0px 10px 0px #666; */
   @media (max-width: 960px) {
     grid-template-columns: 1fr;

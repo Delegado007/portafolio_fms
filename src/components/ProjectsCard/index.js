@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Card, CardBackground, CardContent, CardCategory, CardHeading, CardFooter, Button, CardOverlay } from './styles'
+import { Card, CardBackground, CardContent, CardCategory, CardHeading, CardFooter, Button, CardOverlay, GoSite, ButtonDeploy, ButtonCode } from './styles'
 import { useNearScreen } from '@hoocks/useNearScreen';
+import rocket from '@assets/rocket.png';
+import code from '@assets/code.png';
 
-export const ProjectCard = ({ id, category, heading, background, resume }) => {
+
+export const ProjectCard = ({ id, category, heading, background, resume, urlSite }) => {
   const [indexImg, setIndexImg] = useState(0);
   const [show, element] = useNearScreen()
 
@@ -29,6 +32,8 @@ export const ProjectCard = ({ id, category, heading, background, resume }) => {
   }
 
   console.log("ContainerProjects")
+  console.log(urlSite)
+
 
   return (
     <div ref={element}>
@@ -38,15 +43,17 @@ export const ProjectCard = ({ id, category, heading, background, resume }) => {
             <img src={background[indexImg]}></img>
           </CardBackground>
           <CardOverlay className="card__overlay" />
-          <CardContent className="card__content">
+          <CardContent className="card__content" >
             {/* <CardCategory className="card__category">{category}</CardCategory>
             <CardHeading className="card__heading">{heading}</CardHeading> */}
             <h1>{heading}</h1>
             <p>{resume}</p>
+
+
+
           </CardContent>
+          <CardFooter className="card__footer">
 
-
-          <CardFooter>
             {background.map((img, index) => {
               return (
                 <div key={index}>
@@ -58,6 +65,8 @@ export const ProjectCard = ({ id, category, heading, background, resume }) => {
             })}
 
           </CardFooter>
+          <ButtonCode onClick={() => { window.open(`${urlSite}`, '_blank') }} ><img src={code} /></ButtonCode>
+          <ButtonDeploy onClick={() => { window.open(`${urlSite}`, '_blank') }} ><img src={rocket} /></ButtonDeploy>
         </Card>
       }
     </div>
