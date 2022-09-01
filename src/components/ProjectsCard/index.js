@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Card, CardBackground, CardContent, CardFooter, Button, CardOverlay, ButtonDeploy, ButtonCode } from './styles'
 import { useNearScreen } from '@hoocks/useNearScreen';
-// import rocket from './assets/rocket.png';
-// import code from './assets/code.png';
+import rocket from '@assets/rocket.png';
+import code from '@assets/code.png';
 
 
 export const ProjectCard = ({ id, category, heading, background, resume, urlSite, urlCode }) => {
@@ -65,8 +65,8 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
             })}
 
           </CardFooter>
-          <ButtonCode onClick={() => { window.open(`${urlCode}`, '_blank') }} ></ButtonCode>
-          <ButtonDeploy onClick={() => { window.open(`${urlSite}`, '_blank') }} ></ButtonDeploy>
+          <ButtonCode onClick={() => { window.open(`${urlCode}`, '_blank') }} ><img src={code} /></ButtonCode>
+          <ButtonDeploy onClick={() => { window.open(`${urlSite}`, '_blank') }} ><img src={rocket} /></ButtonDeploy>
         </Card>
       }
     </div>
