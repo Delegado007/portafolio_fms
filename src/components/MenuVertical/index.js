@@ -28,7 +28,7 @@ export const MenuVertical = ({ open }) => {
             <Span  >Projects</Span>
           </Li>
         </a>
-        <a href="#contact_me" onClick={handleSetOpen}>
+        <a href="#contact_form" onClick={handleSetOpen}>
           <Li>
             <Span  >Contact me</Span>
           </Li>
