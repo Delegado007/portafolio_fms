@@ -70,7 +70,7 @@ export const Li = styled.li`
   
 `
 
-export const Span = styled.a`  
+export const Span = styled.span`  
   width: 8rem;
   text-align: center;
   margin: 0 auto;

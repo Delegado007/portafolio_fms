@@ -18,15 +18,21 @@ export const MenuVertical = ({ open }) => {
         <img src={profilePicture} alt="Profile picture"></img>
       </ProfilePicture>
       <Lista>
-        <Li>
-          <Span href="#main_section" onClick={handleSetOpen} >About me</Span>
-        </Li>
-        <Li>
-          <Span href="#list_projects" onClick={handleSetOpen} >Proyects</Span>
-        </Li>
-        <Li>
-          <Span href="#contact_form" onClick={handleSetOpen} >Contact me</Span>
-        </Li>
+        <a href="#main_section" onClick={handleSetOpen}>
+          <Li>
+            <Span  >About me</Span>
+          </Li>
+        </a>
+        <a href="#list_projects" onClick={handleSetOpen}>
+          <Li>
+            <Span  >Projects</Span>
+          </Li>
+        </a>
+        <a href="#contact_me" onClick={handleSetOpen}>
+          <Li>
+            <Span  >Contact me</Span>
+          </Li>
+        </a>
       </Lista>
       <LinksSVG>
         <GitHub />
