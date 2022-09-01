@@ -85,11 +85,6 @@ export const Span = styled.a`
     color: #08fdb3;
     cursor: pointer;   
   }
-  &:visited{
-    text-decoration: inherit;
-    color: inherit;
-    cursor: auto;
-  }
   @media (max-width: 670px) {
     font-size: 1.25rem;
   } 
