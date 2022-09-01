@@ -37,38 +37,31 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
 
   return (
     <div ref={element}>
-      {show &&
-        <Card className="card animate__fadeInUp">
-          <CardBackground className="card__background" >
-            <img src={background[indexImg]}></img>
-          </CardBackground>
-          <CardOverlay className="card__overlay" />
-          <CardContent className="card__content" >
-            {/* <CardCategory className="card__category">{category}</CardCategory>
+      <Card className="card animate__fadeInUp">
+        <CardBackground className="card__background" >
+          <img src={background[indexImg]}></img>
+        </CardBackground>
+        <CardOverlay className="card__overlay" />
+        <CardContent className="card__content" >
+          {/* <CardCategory className="card__category">{category}</CardCategory>
             <CardHeading className="card__heading">{heading}</CardHeading> */}
-            <h1>{heading}</h1>
-            <p>{resume}</p>
-
-
-
-          </CardContent>
-          <CardFooter className="card__footer">
-
-            {background.map((img, index) => {
-              return (
-                <div key={index}>
-                  <Button className={`button_change_img_${id}`} onClick={() => handleImgChange(index)}>
-                    {index + 1}
-                  </Button>
-                </div>
-              )
-            })}
-
-          </CardFooter>
-          <ButtonCode onClick={() => { window.open(`${urlCode}`, '_blank') }} ><img src={code}></img></ButtonCode>
-          <ButtonDeploy onClick={() => { window.open(`${urlSite}`, '_blank') }} ><img src={rocket}></img></ButtonDeploy>
-        </Card>
-      }
+          <h1>{heading}</h1>
+          <p>{resume}</p>
+        </CardContent>
+        <CardFooter className="card__footer">
+          {background.map((img, index) => {
+            return (
+              <div key={index}>
+                <Button className={`button_change_img_${id}`} onClick={() => handleImgChange(index)}>
+                  {index + 1}
+                </Button>
+              </div>
+            )
+          })}
+        </CardFooter>
+        <ButtonCode onClick={() => { window.open(`${urlCode}`, '_blank') }} ><img src={code}></img></ButtonCode>
+        <ButtonDeploy onClick={() => { window.open(`${urlSite}`, '_blank') }} ><img src={rocket}></img></ButtonDeploy>
+      </Card>
     </div>
   )
 }
