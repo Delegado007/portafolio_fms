@@ -134,7 +134,8 @@ export const MainSection = () => {
       </Article>
       <Article className="animate__backInUp">
         <H3>
-          Welcome to my posting and recreation space, where you will find all my works and the necessary potential to build your own digital business.
+          Welcome to my page, where you can find all the technologies and projects i made for fun, study and challenge myself!<br></br>
+          Like also the tools i will use to develop your bussines in the digital world!
         </H3>
       </Article>
     </Section >
