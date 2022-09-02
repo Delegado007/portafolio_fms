@@ -18,7 +18,7 @@ export const ListOfProjects = () => {
       id: 2,
       cardCategory: "Front End",
       cardHeading: "Petgram",
-      resume: "¿Una red social para mascotas? Así es. Esta red social fue creada con el fin de practicar y replicar la red social Instagram. Fue creada con React.js aplicando customs hooks, lazy loading, import dinámicos, useMemo, useRef, styled-components, GraphQL, testing con Cypress y mucho mas.",
+      resume: "A social network for pets? That's how it is. This social network was created to practice and replicate the Instagram social network. React.js technologies were used by applying customs hooks, lazy loading, dynamic import, useMemo, useRef, styled-components, GraphQL, testing with Cypress and more.",
       urlSite: "https://petgram-delegado.netlify.app",
       urlCode: "https://github.com/Delegado007/petgram",
       stack: "React.js, styled-components, GraphQL, Cypress, Webpack,",
@@ -28,7 +28,7 @@ export const ListOfProjects = () => {
       id: 3,
       cardCategory: "Front End",
       cardHeading: "Pokedux",
-      resume: "Con Pokedux buscá todos tus pokemones favoritos. Practica y demostración del uso de Redux en React.js consumiento la PokéAPI con Axios. Tambien aplico el usos de Middlewares, asincronismo de petición con redux-Thunk, uso de slices para separar el estado de pokemons y UI, estilados con styles-components, empaquetado con webpack y uso de Redux DevTools.",
+      resume: "With Pokedux you can search for all your favorite pokemons. It is a practice and demonstration of the use of Redux in React.js. Using the PokéAPI with Axios. I also applied the use of Middlewares, request asynchrony with redux-Thunk, use of slices to separate the state of pokemons and UI, styling with styles-components, packaging with webpack and use of Redux DevTools.",
       urlSite: "https://pokedux-delegadodev.netlify.app",
       urlCode: "https://github.com/Delegado007/pokedux/tree/styles_component",
       background: ["assets/captures/pokedux1.png", "assets/captures/pokedux2.png"]
@@ -37,7 +37,7 @@ export const ListOfProjects = () => {
       id: 4,
       cardCategory: "Front End",
       cardHeading: "OyeMusica",
-      resume: "Primera Web realizada con React.js y Bootstrap 5, esta web fue creada con el fin de practicar validación de formularios, simulación de loggin, registro, manejo de estados globales con Context API, useState, useEffect, etc.",
+      resume: "First web made with React.js and Bootstrap 5, this web was created to practice form validation, loggin simulation, registration, handling of global states with Context API, useState, useEffect, local storage, routes with react-router-dom, etc.",
       urlSite: "https://oye-musica-delegado.netlify.app",
       urlCode: "https://github.com/Delegado007/OyeMusica",
       background: ["assets/captures/oyemusica1.png", "assets/captures/oyemusica2.png"]
