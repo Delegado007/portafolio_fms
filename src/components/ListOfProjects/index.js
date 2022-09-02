@@ -8,7 +8,7 @@ export const ListOfProjects = () => {
       id: 1,
       cardCategory: "Front End",
       cardHeading: "Ruadis Librería",
-      resume: "Proyecto Freelance desarrollado con el propósito de suplir una necesidad de dar acceso remoto a los clientes al repositorio de libros y mercadería que se encuentran disponibles a la venta. Construida en React.js y estilada con TailwindCSS",
+      resume: "Freelance project developed with the purpose of giving remote access to all merchandise and books for sale to customers. The Web has elaborate techniques for form validation, logging, registration, useContext, TailwindCSS, darkMode, and more.",
       urlSite: "https://webpack-ruadis.netlify.app",
       urlCode: "https://github.com/Delegado007/webpack-ruadis-react",
       stack: "React.js, TailwindCSS, JSON Web Tokens, ",

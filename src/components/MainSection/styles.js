@@ -13,7 +13,7 @@ export const Section = styled.section`
   max-width: 1200px;
   margin: auto;
   
-  @media (max-width: 670px) {
+  @media (max-width: 745px) {
     padding-right: 1rem;
   } 
 `
@@ -51,7 +51,7 @@ export const H1 = styled.h1`
       opacity: 0.8;
     }  
   }
-  @media (max-width: 670px) {
+  @media (max-width: 540px) {
     font-size: 3rem;
   }
 `
@@ -64,7 +64,17 @@ font-size: 4.5rem;
   font-family: 'M PLUS Code Latin';
   font-weight: bold;
   /* letter-spacing: 2px; */
-  @media (max-width: 670px) {
+  @media (max-width: 540px) {
     font-size: 3rem;
   }  
+`
+
+export const H3 = styled.h3`
+  max-width: 470px;
+  text-align: justify;
+  color: #00B881;
+  @media (max-width: 540px) {
+    max-width: 310px;
+    font-size: 1rem;
+  } 
 `

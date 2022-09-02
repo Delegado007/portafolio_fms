@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { glitch } from './../../styles/glitchAnimation';
 
 export const ContainerGridForm = styled.div`
-  min-height: 500px;
-  
-  
-  
+  min-height: 500px;  
 `
 
 export const ContactIn = styled.div`
@@ -17,7 +14,7 @@ export const ContactIn = styled.div`
   grid-row-gap: 0px;
   max-width: 1200px;
   height: 100%;
- 
+  margin: auto;
   padding: 0 24px 100px;
   /* box-shadow: 0px 0px 10px 0px #666; */
   @media (max-width: 960px) {
@@ -37,13 +34,15 @@ export const Article = styled.article`
 
 export const H2 = styled.h2`
   position: relative;  
-  font-size: 3rem;  
+  font-size: 3rem;
+  
+  letter-spacing: 3px;
   &:hover{
     cursor: pointer;
     text-shadow: 
-    0.05em 0 0 rgba(255,0,0,.75),
-    -0.025em -0.05em 0 rgba(0,255,0,.75),
-    0.025em 0.05em 0 rgba(0,0,255,.75);
+    0.05em 0 0 rgba(60, 34, 2,.75),
+    -0.025em -0.05em 0 rgba(251, 200, 136,.75),
+    0.025em 0.05em 0 rgba(254, 236, 216,.75);
     & span:first-child{
       animation: ${glitch} 650ms infinite;      
       clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
@@ -63,12 +62,13 @@ export const H2 = styled.h2`
 `
 
 export const Span = styled.span`
-font-size: 3rem;
+  font-size: 3rem;
   position: absolute;
   top: 0;
   left: 0;
   font-family: 'M PLUS Code Latin';
   font-weight: bold;
+  
   /* letter-spacing: 2px; */
   @media (max-width: 670px) {
     font-size: 2.4rem;

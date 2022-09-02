@@ -16,7 +16,7 @@ export const Menu = styled.menu`
   align-items: center;
   margin: 0;
   padding: 0;
-  @media (max-width: 670px) {
+  @media (max-width: 745px) {
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     position: fixed;
     top: 0;
@@ -85,7 +85,7 @@ export const Span = styled.span`
     color: #08fdb3;
     cursor: pointer;   
   }
-  @media (max-width: 670px) {
+  @media (max-width: 745px) {
     font-size: 1.25rem;
   } 
 `
@@ -101,10 +101,10 @@ export const ProfilePicture = styled.div`
     width: 8rem;
     filter: contrast(1.5) grayscale(0.8) sepia(0.6);
   }
-  @media (max-width: 670px) {
+  @media (max-width: 745px) {
     display: none;
   }
-  @media (max-height: 670px) {
+  @media (max-height: 745px) {
     display: none;
   }
   `
@@ -116,7 +116,7 @@ export const LinksSVG = styled.div`
   bottom: 0;
   min-width: 100%;
   min-height: 50px;
-  @media (max-width: 670px) {
+  @media (max-width: 745px) {
     max-width: 128px;
     position: relative;
     justify-content: center;    

@@ -12,7 +12,11 @@ export const GlobalStyles = createGlobalStyle`
   }
   ::-webkit-scrollbar {
     display: none;
-  }      
+  }
+  
+  a {
+    text-decoration: none;
+  }
           
   ul, li, h1, h2, h3, p, button, input, textarea {
     margin: 0;
@@ -39,7 +43,7 @@ export const GlobalStyles = createGlobalStyle`
   
 .App {
   padding-left: 8rem;
-  @media (max-width: 670px) {
+  @media (max-width: 745px) {
     padding-left: 0;
   }
 }

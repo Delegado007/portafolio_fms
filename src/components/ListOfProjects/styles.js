@@ -35,7 +35,7 @@ export const CardGrid = styled.div`
   max-width: ${widthContainer};
   width: 100%;
   
-  @media(min-width: 540px){  
+  @media(min-width: 610px){  
     grid-template-columns: repeat(2, 1fr); 
   
   }

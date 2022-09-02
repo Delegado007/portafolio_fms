@@ -1,5 +1,5 @@
 import React from "react";
-import { Article, H1, Span, Section } from './styles'
+import { Article, H1, Span, Section, H3 } from './styles'
 
 
 export const MainSection = () => {
@@ -131,6 +131,11 @@ export const MainSection = () => {
           r
           <Span aria-hidden="true">r</Span>
         </H1>
+      </Article>
+      <Article className="animate__backInUp">
+        <H3>
+          Welcome to my posting and recreation space, where you will find all my works and the necessary potential to build your own digital business.
+        </H3>
       </Article>
     </Section >
   )
