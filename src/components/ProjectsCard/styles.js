@@ -73,8 +73,16 @@ export const CardContent = styled.div`
   opacity: 0;
   color: white;
   & h1{
+    -webkit-text-stroke: thin;
+    text-transform: uppercase;
+    text-align: center;
     color: #FFA600;
     padding-bottom: 16px;
+  }
+  & p {
+    -webkit-text-stroke: thin;
+    text-align: center;
+    color: #00E09D;
   }
 `
 
@@ -366,4 +374,29 @@ export const Button = styled.button`
     box-shadow: #343434 0 3px 7px inset;
     transform: translateY(2px);
   }
+`
+
+export const ContainerGridIconSVG = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 24px;
+  width: 100%;
+  padding-top: 24px;
+  & div {
+    
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+  & div img {
+    
+    width: 50px;
+    
+    margin: auto;
+  }
+`
+
+export const SVGInGrid = styled.div`
+
 `

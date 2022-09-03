@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Card, CardBackground, CardContent, CardFooter, Button, CardOverlay, ButtonDeploy, ButtonCode } from './styles'
+import { Card, CardBackground, CardContent, CardFooter, Button, CardOverlay, ButtonDeploy, ButtonCode, ContainerGridIconSVG } from './styles'
 import { useNearScreen } from '@hoocks/useNearScreen';
 
-export const ProjectCard = ({ id, category, heading, background, resume, urlSite, urlCode }) => {
+export const ProjectCard = ({ id, category, heading, background, resume, urlSite, urlCode, stack }) => {
   const code = "assets/code.png";
   const rocket = "assets/rocket.png";
 
@@ -47,6 +47,17 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
             <CardHeading className="card__heading">{heading}</CardHeading> */}
           <h1>{heading}</h1>
           <p>{resume}</p>
+          <ContainerGridIconSVG>
+            {stack.map((technology) => {
+              return (
+                <div>
+                  <img src={technology} alt="technology used" />
+                </div>
+              )
+            })
+
+            }
+          </ContainerGridIconSVG>
         </CardContent>
         <CardFooter className="card__footer">
           {background.map((img, index) => {

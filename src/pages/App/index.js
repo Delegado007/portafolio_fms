@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Burguer } from '@components/burguer/index'
+import { Burguer } from '@components/Burguer/index'
 import { MenuVertical } from '@components/MenuVertical'
 import { ListOfProjects } from '@components/ListOfProjects'
 import { ParticlesComponent } from '@components/Particles'
