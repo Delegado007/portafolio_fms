@@ -73,6 +73,7 @@ export const H3 = styled.h3`
   max-width: 470px;
   text-align: justify;
   color: #00B881;
+  -webkit-text-stroke: thin;
   @media (max-width: 540px) {
     max-width: 310px;
     font-size: 1rem;
