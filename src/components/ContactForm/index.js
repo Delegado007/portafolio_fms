@@ -19,7 +19,7 @@ export const ContactForm = () => {
     event.preventDefault();
     try {
       console.log("axios entra")
-      await axios.post("http://localhost:3000/send_mail", { name, mail, message });
+      await axios.post("https://nodemailerdelegado.herokuapp.com/send_mail", { name, mail, message });
       setName("");
       setMail("");
       setMessage("");
