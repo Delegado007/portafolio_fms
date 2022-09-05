@@ -89,7 +89,7 @@ export const ContactMap = styled.div`
   }
 `
 
-export const Form = styled.div`
+export const Form = styled.form`
   grid-area: 1 / 1 / 2 / 2;
   margin-right: 24px;
   height: auto;  
@@ -103,7 +103,7 @@ export const Form = styled.div`
   }
 `
 
-export const ContainerInput = styled.form`
+export const ContainerInput = styled.div`
   position: relative;
   width: 100%;
   & label {

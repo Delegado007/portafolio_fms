@@ -50,7 +50,7 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
           <ContainerGridIconSVG>
             {stack.map((technology) => {
               return (
-                <div>
+                <div key={technology}>
                   <img src={technology} alt="technology used" />
                 </div>
               )

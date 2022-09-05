@@ -1,16 +1,40 @@
 import React from "react";
+import { ModalStatusMail } from "../ModalStatusMail";
 import { useNearScreen } from '@hoocks/useNearScreen';
 import { ContainerGridForm, ContactIn, Article, H2, Span, ContactMap, Form, ContainerInput, InputText, TextArea, InputButton } from "./styles";
+import { useState } from "react";
+import axios from 'axios';
 
 
 export const ContactForm = () => {
-  const [showForm, form] = useNearScreen()
-  const [showMap, map] = useNearScreen()
+  const [showForm, form] = useNearScreen();
+  const [showMap, map] = useNearScreen();
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [message, setMessage] = useState("");
+  const [enviado, setEnviado] = useState(false);
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      console.log("axios entra")
+      await axios.post("http://localhost:3000/send_mail", { name, mail, message });
+      setName("");
+      setMail("");
+      setMessage("");
+      setEnviado(true);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   console.log(showMap)
   return (
     <ContainerGridForm id="contact_form">
+      <ModalStatusMail status={enviado} />
       <ContactIn>
-        <Form ref={form}>
+        <Form ref={form} onSubmit={handleSubmit} >
           {showForm &&
             <>
               <Article className="animate__rubberBand">
@@ -62,17 +86,17 @@ export const ContactForm = () => {
               </Article>
               <div className="animate__fadeInUp">
                 <ContainerInput>
-                  <InputText id="input0" type="text" required />
+                  <InputText id="input0" type="text" value={name} onChange={({ target }) => { setName(target.value) }} required />
                   <label htmlFor="input0" >Name</label>
                   <span className="underline"></span>
                 </ContainerInput>
                 <ContainerInput>
-                  <InputText id="input1" type="text" required />
+                  <InputText id="input1" type="text" value={mail} onChange={({ target }) => { setMail(target.value) }} required />
                   <label htmlFor="input1" >Email</label>
                   <span className="underline"></span>
                 </ContainerInput>
                 <ContainerInput>
-                  <TextArea id="input2" required ></TextArea>
+                  <TextArea id="input2" value={message} onChange={({ target }) => { setMessage(target.value) }} required ></TextArea>
                   <label htmlFor="input2" >Message</label>
                   <span className="underline"></span>
                 </ContainerInput>
