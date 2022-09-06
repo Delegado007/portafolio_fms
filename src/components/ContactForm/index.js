@@ -13,19 +13,22 @@ export const ContactForm = () => {
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
   const [enviado, setEnviado] = useState(false);
+  const [loading, setLoading] = useState(false);
 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
     try {
-      console.log("axios entra")
       await axios.post("https://sheltered-bastion-73111.herokuapp.com/send_mail", { name, mail, message });
       setName("");
       setMail("");
       setMessage("");
       setEnviado(true);
+      setLoading(false);
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
   }
 
@@ -100,7 +103,7 @@ export const ContactForm = () => {
                   <label htmlFor="input2" >Message</label>
                   <span className="underline"></span>
                 </ContainerInput>
-                <InputButton type="submit" ><span>Send Message</span></InputButton>
+                <InputButton type="submit" disabled={loading} ><span>Send Message</span></InputButton>
               </div>
             </>
           }

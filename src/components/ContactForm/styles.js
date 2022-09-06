@@ -211,6 +211,9 @@ export const InputButton = styled.button`
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
+  &:disabled {
+    opacity: .3;
+  }
   & span{
     position: relative;
     z-index: 100;
