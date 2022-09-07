@@ -12,7 +12,7 @@ export const Menu = styled.menu`
   display: flex;
   z-index: 1001;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -57,7 +57,7 @@ export const Li = styled.li`
   width: 8rem;
   text-align: center;
   display: block;  
-  line-height: 5rem;
+  line-height: 3.8rem;
   border-bottom: 1px solid #282828;
   position: relative;  
   font-size: 1rem;
@@ -65,12 +65,7 @@ export const Li = styled.li`
   /* letter-spacing: 2px; */
   &:first-child{
     border-top: 1px solid #282828;
-  }
-  @media (max-height: 800px) {
-    line-height: 3rem;
-  }
- 
-  
+  }  
 `
 
 export const Span = styled.span`  
@@ -95,28 +90,18 @@ export const Span = styled.span`
 
 
 export const ProfilePicture = styled.div`
-  top: 0;
-  position: absolute;
-  overflow: hidden;
+    overflow: hidden;
   height: 180px;
   width: 100%;
   & img {
     width: 8rem;
     filter: contrast(1.5) grayscale(0.8) sepia(0.6);
   }
-  @media (max-width: 745px) {
-    display: none;
-  }
-  @media (max-height: 620px) {
-    display: none;
-  }
   `
 
 export const LinksSVG = styled.div`
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
-  bottom: 0;
   min-width: 100%;
   min-height: 50px;
   @media (max-width: 745px) {
