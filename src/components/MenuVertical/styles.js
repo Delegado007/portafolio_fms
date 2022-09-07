@@ -18,8 +18,7 @@ export const Menu = styled.menu`
   padding: 0;
   @media (max-width: 745px) {
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    position: fixed;
-    top: 0;
+    justify-content: center;
     right: 0;
     height: 100vh;
     width: 100%;
@@ -97,6 +96,9 @@ export const ProfilePicture = styled.div`
     width: 8rem;
     filter: contrast(1.5) grayscale(0.8) sepia(0.6);
   }
+  @media (max-width: 745px) {
+    display: none;
+  } 
   `
 
 export const LinksSVG = styled.div`
@@ -104,9 +106,11 @@ export const LinksSVG = styled.div`
   justify-content: space-evenly;
   min-width: 100%;
   min-height: 50px;
+  z-index: 1002;
   @media (max-width: 745px) {
+  z-index: 1002;
+
     max-width: 128px;
-    position: relative;
     justify-content: center;    
     & svg {
       margin: 25px 20px 0;
