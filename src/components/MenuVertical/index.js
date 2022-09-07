@@ -28,11 +28,6 @@ export const MenuVertical = ({ open }) => {
             <Span  >Projects</Span>
           </Li>
         </a>
-        <a href="#contact_form" onClick={handleSetOpen}>
-          <Li>
-            <Span  >Contact me</Span>
-          </Li>
-        </a>
         <a href="#skills" onClick={handleSetOpen}>
           <Li>
             <Span  >My skills</Span>
@@ -41,6 +36,11 @@ export const MenuVertical = ({ open }) => {
         <a href="https://drive.google.com/file/d/1A6Zuh8nJFGPbIBI-aTTPKZdIi-P7-x_E/view" target="_blank" onClick={handleSetOpen}>
           <Li>
             <Span  >Resume</Span>
+          </Li>
+        </a>
+        <a href="#contact_form" onClick={handleSetOpen}>
+          <Li>
+            <Span  >Contact me</Span>
           </Li>
         </a>
       </Lista>
