@@ -33,9 +33,9 @@ export const App = () => {
           <MenuVertical open={open} />
           <div className="App">
             <ParticlesComponent />
-            <Skills />
             <Burguer open={open} />
             <ListOfProjects loadDataProjects={loadDataProjects} />
+            <Skills />
             <ContactForm />
           </div>
         </>

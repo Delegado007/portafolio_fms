@@ -56,9 +56,7 @@ export const H2 = styled.h2`
       opacity: 0.8;
     }   
   }  
-  @media (max-width: 670px) {
-    font-size: 2.4rem;
-  }
+  
 `
 
 export const Span = styled.span`
@@ -70,9 +68,7 @@ export const Span = styled.span`
   font-weight: bold;
   
   /* letter-spacing: 2px; */
-  @media (max-width: 670px) {
-    font-size: 2.4rem;
-  }  
+  
 `
 
 export const ContactMap = styled.div`  
