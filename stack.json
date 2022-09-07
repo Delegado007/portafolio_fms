@@ -1,0 +1,95 @@
+{
+  "stack": [
+    {
+      "id": 1,
+      "technology": "HTML5",
+      "percent": "95",
+      "urlFile": "assets/html5.png",
+      "fill": "#ff713f"
+    },
+    {
+      "id": 2,
+      "technology": "CSS3",
+      "percent": "85",
+      "urlFile": "assets/css3.png",
+      "fill": "#3a81c8"
+    },
+    {
+      "id": 3,
+      "technology": "JavaScript",
+      "percent": "82",
+      "urlFile": "assets/javascript.png",
+      "fill": "#fdd942"
+    },
+    {
+      "id": 4,
+      "technology": "React.js",
+      "percent": "90",
+      "urlFile": "assets/react.png",
+      "fill": "#66dbfb"
+    },
+    {
+      "id": 5,
+      "technology": "Redux",
+      "percent": "75",
+      "urlFile": "assets/redux.png",
+      "fill": "#7a50be"
+    },
+    {
+      "id": 6,
+      "technology": "Webpack",
+      "percent": "78",
+      "urlFile": "assets/webpack.png",
+      "fill": "#237cc2"
+    },
+    {
+      "id": 7,
+      "technology": "Styled-Components",
+      "percent": "70",
+      "urlFile": "assets/styled-components.png",
+      "fill": "#ffd151"
+    },
+    {
+      "id": 8,
+      "technology": "PostgreSQL",
+      "percent": "68",
+      "urlFile": "assets/postgresql.png",
+      "fill": "#396c94"
+    },
+    {
+      "id": 9,
+      "technology": "GraphQL",
+      "percent": "50",
+      "urlFile": "assets/graphql.png",
+      "fill": "#e63bae"
+    },
+    {
+      "id": 10,
+      "technology": "Git",
+      "percent": "95",
+      "urlFile": "assets/git.png",
+      "fill": "#df523c"
+    },
+    {
+      "id": 11,
+      "technology": "TailwindCSS",
+      "percent": "76",
+      "urlFile": "assets/tailwindCSS.png",
+      "fill": "#09b9d7"
+    },
+    {
+      "id": 12,
+      "technology": "Bootstrap 5",
+      "percent": "82",
+      "urlFile": "assets/bootstrap.png",
+      "fill": "#8712fa"
+    },
+    {
+      "id": 13,
+      "technology": "Node.js",
+      "percent": "70",
+      "urlFile": "assets/node.png",
+      "fill": "#8fc708"
+    }
+  ]
+}

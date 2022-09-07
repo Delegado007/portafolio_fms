@@ -66,6 +66,9 @@ export const Li = styled.li`
   &:first-child{
     border-top: 1px solid #282828;
   }
+  @media (max-height: 800px) {
+    line-height: 3rem;
+  }
  
   
 `
@@ -82,7 +85,7 @@ export const Span = styled.span`
   color: inherit;
   cursor: auto;
   &:hover{
-    color: #08fdb3;
+    color: #fdd942;
     cursor: pointer;   
   }
   @media (max-width: 745px) {
@@ -104,7 +107,7 @@ export const ProfilePicture = styled.div`
   @media (max-width: 745px) {
     display: none;
   }
-  @media (max-height: 745px) {
+  @media (max-height: 620px) {
     display: none;
   }
   `

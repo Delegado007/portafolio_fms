@@ -33,6 +33,11 @@ export const MenuVertical = ({ open }) => {
             <Span  >Contact me</Span>
           </Li>
         </a>
+        <a href="#skills" onClick={handleSetOpen}>
+          <Li>
+            <Span  >My skills</Span>
+          </Li>
+        </a>
         <a href="https://drive.google.com/file/d/1A6Zuh8nJFGPbIBI-aTTPKZdIi-P7-x_E/view" target="_blank" onClick={handleSetOpen}>
           <Li>
             <Span  >Resume</Span>

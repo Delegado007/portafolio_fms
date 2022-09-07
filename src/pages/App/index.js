@@ -10,6 +10,7 @@ import { SpinerLoading } from '../../components/SpinerLoading';
 import jsonDataProjects from './../../../projects.json';
 import { setLoading } from "../../slices/uiSlice";
 import { useDispatch } from 'react-redux';
+import { Skills } from '@components/Skills';
 
 export const App = () => {
   const [loadDataProjects, setDataProjects] = useState([])
@@ -18,9 +19,9 @@ export const App = () => {
   const loading = useSelector((state) => state.ui.loading)
   useEffect(() => {
     setDataProjects(jsonDataProjects.projects);
-    setTimeout(() => {
-      dispatch(setLoading(false))
-    }, 1500)
+    // setTimeout(() => {
+    // }, 1500)
+    dispatch(setLoading(false))
   }, []);
 
   return (
@@ -32,6 +33,7 @@ export const App = () => {
           <MenuVertical open={open} />
           <div className="App">
             <ParticlesComponent />
+            <Skills />
             <Burguer open={open} />
             <ListOfProjects loadDataProjects={loadDataProjects} />
             <ContactForm />

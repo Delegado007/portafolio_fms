@@ -126,7 +126,7 @@ export const ContainerInput = styled.div`
     left:0;
     width: 0;
     height: 2px;
-    background: #00A97F;
+    background: #FDD942;
     transition: all 200ms ease-out;
   }
 `
@@ -150,7 +150,7 @@ export const InputText = styled.input`
   margin-top: 10px;
   &:focus, &:valid{
     & ~ label{
-      color: #00A97F;
+      color: #FDD942;
       transform: translateY(-22px);
       font-size:0.825em;
       cursor:default;
@@ -181,7 +181,7 @@ export const TextArea = styled.textarea`
   padding: 8px;
   &:focus, &:valid{
     & ~ label{
-      color: #00A97F;
+      color: #FDD942;
       transform: translateY(-22px);
       font-size:0.825em;
       cursor:default;
@@ -201,7 +201,7 @@ export const InputButton = styled.button`
   max-width: 300px;
   appearance: none;
   background-color: #1d1d1d;
-  border: 1px solid #00A97F;
+  border: 1px solid #FDD942;
   padding: 8px;
   margin-top: 15px;
   cursor: pointer;
@@ -225,7 +225,7 @@ export const InputButton = styled.button`
     color: #000;       
     animation: opacityFallbackOut .5s step-end forwards;
     backface-visibility: hidden;
-    background-color: #00A97F;
+    background-color: #FDD942;
     clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
     content: "";
     height: calc(100% + 1px);
