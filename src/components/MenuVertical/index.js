@@ -4,7 +4,7 @@ import { Linkedin } from "@components/Linkedin";
 import { Menu, Lista, Li, Span, LinksSVG, ProfilePicture } from "./styles";
 import profilePicture from '@assets/profile.jpeg';
 import { useDispatch } from 'react-redux';
-import { setOpenMenu } from '@actions';
+import { setOpenMenu } from "../../slices/uiSlice";
 
 export const MenuVertical = ({ open }) => {
   console.log("MenuVertical");

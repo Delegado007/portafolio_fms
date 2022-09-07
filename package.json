@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
     "intersection-observer": "^0.12.2",

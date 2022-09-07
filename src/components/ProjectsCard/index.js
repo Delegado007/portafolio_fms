@@ -32,9 +32,6 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
   }
 
   console.log("ContainerProjects")
-  console.log(urlSite)
-
-
   return (
     <div ref={element}>
       <Card className="card animate__fadeInUp">

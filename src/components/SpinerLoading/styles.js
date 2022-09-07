@@ -1,153 +1,112 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components"
 
-const black = "#000";
-const white = "#fff";
+const colorSpinner = '#FFA600';
 
-// @mixin pseudo ($content: '') {
-//   position: absolute;
-//   content: $content;
-// }
+const animateC = keyframes`
+  0% 
+    {
+      transform:rotate(0deg);
+    }
+  100%
+    {
+    transform:rotate(360deg);
+    }
+`
+const animate = keyframes`
+  0%
+    {
+      transform: rotate(45deg);
+    }
+  100%
+    {
+      transform: rotate(405deg);
+    }
+`
+
+const fadeInOut = keyframes`
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
 
 export const ContainerSpiner = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
-  transform: scale(0.725);
 `
 
-
-export const Divider = styled.div`
-  position: absolute;
-  z-index: 2;
-  top: 65px;
-  left: 200px;
-  width: 50px;
-  height: 15px;
-  background: ${white};
-`
-
-export const LoadingText = styled.p`
-  position: relative;
-  font-size: 3.75rem;
-  font-weight: 300;
-  margin: 0;
-  white-space: nowrap;
+export const Spinner = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:180px;
+  height:180px;
+  background:transparent;
+  border:5px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-size:1.7rem;
+  color: ${colorSpinner};
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  box-shadow:0 0 20px rgba(0,0,0,.5);  
   &::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 40px;
-    left: 115px;
-    width: 6px;
-    height: 6px;
-    background: $black;
-    border-radius: 50%;
-    animation: ${dotMove} 1800ms cubic-bezier(0.25, 0.25, 0.75, 0.75) infinite;
-  }
-  & .letter {
-    display: inline-block;
-    position: relative;
-    color: ${black};
-    letter-spacing: 8px;
-      &:nth-child(1) {
-      // For the letter "L"
-      transform-origin: 100% 70%;
-      transform: scale(1, 1.275);
-        &::before {
-        content: '';
-        position: absolute;
-        top: 22px;
-        left: 0;
-        width: 14px;
-        height: 36px;
-        background: $white;
-        transform-origin: 100% 0;
-        animation: ${lineStretch} 1800ms cubic-bezier(0.25, 0.25, 0.75, 0.75) infinite;
-      }
-    }
-      &:nth-child(5) {
-      // For the letter "i"
-      transform-origin: 100% 70%;
-      animation: ${letterStretch} 1800ms cubic-bezier(0.25, 0.23, 0.73, 0.75) infinite;
-        &::before {
-          content: '';
-          position: absolute;
-          top: 15px;
-          left: 2px;
-          width: 9px;
-          height: 15px;
-          background: $white;
-      }
-    }
-  }
-
-`
-
-const dotMove = keyframes`
-  0%, 100% {
-    transform: rotate(180deg) translate(-110px, -10px) rotate(-180deg);
-  }
-  50% {
-    transform: rotate(0deg) translate(- 111px, 10px) rotate(0deg);
-	}
-`
-
-// For the letter "i"
-const letterStretch = keyframes`
-  0%, 100% {
-    transform: scale(1, 0.35);
-    transform-origin: 100% 75%;
-  }
-  8%, 28% {
-    transform: scale(1, 2.125);
-    transform-origin: 100% 67%;
-  }
-  37% {
-    transform: scale(1, 0.875);
-    transform-origin: 100% 75%;
-  }
-  46% {
-    transform: scale(1, 1.03);
-    transform-origin: 100% 75%;
-  }
-  50% ,97% {
-    transform: scale(1);
-    transform-origin: 100% 75%;
+    content:'';
+    position:absolute;
+    top:-3px;
+    left:-3px;
+    width:100%;
+    height:100%;
+    border:5px solid transparent;
+    border-top:5px solid ${colorSpinner};
+    border-right:5px solid ${colorSpinner};
+    border-radius:50%;
+    animation: ${animateC} 2s linear infinite;
   }
 `
 
-
-// For the letter "L"
-const lineStretch = keyframes`
-  0%, 45%, 70%, 100% {
-    transform: scaleY(0.125);
-  }
-  49% {
-    transform: scaleY(0.75);
-  }
-  50% {
-    transform: scaleY(0.875);
-  }
-  53% {
-    transform: scaleY(0.5);
-  }
-  60% {
-    transform: scaleY(0);
-  }
-  68% {
-    transform: scaleY(0.18);
+export const Span = styled.span`
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation: ${animate} 2s linear infinite;
+  &::before {
+    content:'';
+    position:absolute;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background: ${colorSpinner};
+    top:-6px;
+    right:-8px;
+    box-shadow:0 0 20px ${colorSpinner};
   }
 `
-
-
-// @media(min - width: 48rem) {
-//   #container {
-//     transform: scale(0.725rem);
-//   }
-// }
-
-// @media(min - width: 62rem) {
-//   #container {
-//     transform: scale(0.85);
-//   }
-// }
+export const Dots = styled.span`
+  position: absolute;
+  opacity: 1;
+  animation: ${fadeInOut} 1.5s ease-in-out infinite;
+`
