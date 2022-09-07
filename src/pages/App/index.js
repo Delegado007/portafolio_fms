@@ -19,9 +19,9 @@ export const App = () => {
   const loading = useSelector((state) => state.ui.loading)
   useEffect(() => {
     setDataProjects(jsonDataProjects.projects);
-    // setTimeout(() => {
-    // }, 1500)
-    dispatch(setLoading(false))
+    setTimeout(() => {
+      dispatch(setLoading(false))
+    }, 1500)
   }, []);
 
   return (
