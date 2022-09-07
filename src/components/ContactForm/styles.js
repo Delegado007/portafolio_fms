@@ -39,22 +39,25 @@ export const H2 = styled.h2`
   letter-spacing: 3px;
   &:hover{
     cursor: pointer;
+    color: #FDD942;
     text-shadow: 
-    0.05em 0 0 rgba(60, 34, 2,.75),
-    -0.025em -0.05em 0 rgba(251, 200, 136,.75),
-    0.025em 0.05em 0 rgba(254, 236, 216,.75);
+    0.05em 0 0 rgba(182, 146, 2,.75),
+    -0.025em -0.05em 0 rgba(20, 16, 0,.75),
+    0.025em 0.05em 0 rgba(255, 255, 255,.75);
     & span:first-child{
+      color: #FDD942;
       animation: ${glitch} 650ms infinite;      
       clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
       transform: translate(-0.015em, -0.0125em);      
       opacity: 0.8;
     }
     & span:last-child{
+      color: #FDD942;
       animation: ${glitch} 375ms infinite;      
       clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
       transform: translate(0.015em, 0.018em);      
       opacity: 0.8;
-    }   
+    }    
   }  
   
 `

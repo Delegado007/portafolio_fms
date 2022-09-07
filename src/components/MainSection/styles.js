@@ -31,12 +31,14 @@ export const H1 = styled.h1`
   z-index: 1000;
   font-size: 4.5rem;
   &:hover{
+    color: #FDD942;
     cursor: pointer;
     text-shadow: 
-    0.05em 0 0 rgba(255,0,0,.75),
-    -0.025em -0.05em 0 rgba(0,255,0,.75),
-    0.025em 0.05em 0 rgba(0,0,255,.75);
-    & span:first-child{
+    0.05em 0 0 rgba(182, 146, 2,.75),
+    -0.025em -0.05em 0 rgba(20, 16, 0,.75),
+    0.025em 0.05em 0 rgba(255, 255, 255,.75);
+    & span:first-child{      
+      color: #FDD942;
       animation: ${glitch} 650ms infinite;
       clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
       transform: translate(-0.015em, -0.0125em);
@@ -44,12 +46,13 @@ export const H1 = styled.h1`
       opacity: 0.8;
     }
     & span:last-child{
+      color: #FDD942;
       animation: ${glitch} 375ms infinite;
       clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
       transform: translate(0.015em, 0.018em);
       /* color: red; */
       opacity: 0.8;
-    }  
+    }
   }
   @media (max-width: 540px) {
     font-size: 3rem;
