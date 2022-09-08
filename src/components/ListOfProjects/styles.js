@@ -1,14 +1,7 @@
 import styled from "styled-components";
 import { glitch } from './../../styles/glitchAnimation';
 
-const backgroundDark = "#2d3548";
-const textLight = "rgba(255,255,255,0.6)";
-const textLighter = "rgba(255,255,255,0.9)";
-const spacingS = "8px";
-const spacingM = "16px";
 const spacingL = "24px";
-const spacingXl = "32px";
-const spacingXxl = "64px";
 const widthContainer = "1200px";
 
 export const Section = styled.section`
@@ -34,8 +27,7 @@ export const CardGrid = styled.div`
   grid-column-gap: ${spacingL};
   grid-row-gap: ${spacingL};
   max-width: ${widthContainer};
-  width: 100%;
-  
+  width: 100%;  
   @media(min-width: 610px){  
     grid-template-columns: repeat(2, 1fr); 
   
@@ -43,20 +35,7 @@ export const CardGrid = styled.div`
   @media(min-width: 1024px){  
     grid-template-columns: repeat(3, 1fr);
   }
-  /* &:hover .card:not(:hover) .card__background{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(4px);
-  } */
 `
-
-
-
-
-
-
-
-
-
-
 
 export const ContainerTitle = styled.div`
   display: flex;
@@ -74,9 +53,6 @@ export const ContainerTitle = styled.div`
   margin: auto;
 `
 
-
-
-
 export const Article = styled.article`  
   overflow: hidden;
   display: flex;  
@@ -87,8 +63,7 @@ export const Article = styled.article`
 
 export const H2Title = styled.h2`
   position: relative;  
-  font-size: 3rem;
-  
+  font-size: 3rem;  
   letter-spacing: 3px;
   &:hover{
     cursor: pointer;
@@ -111,8 +86,7 @@ export const H2Title = styled.h2`
       transform: translate(0.015em, 0.018em);      
       opacity: 0.8;
     }   
-  }  
-  
+  }    
 `
 
 export const SpanTitle = styled.span`
@@ -122,7 +96,4 @@ export const SpanTitle = styled.span`
   left: 0;
   font-family: 'M PLUS Code Latin';
   font-weight: bold;
-  
-  /* letter-spacing: 2px; */
-  
 `

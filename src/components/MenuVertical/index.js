@@ -7,11 +7,11 @@ import { useDispatch } from 'react-redux';
 import { setOpenMenu } from "../../slices/uiSlice";
 
 export const MenuVertical = ({ open }) => {
-  console.log("MenuVertical");
   const dispatch = useDispatch();
   const handleSetOpen = () => {
     dispatch(setOpenMenu(!open));
   }
+
   return (
     <Menu open={open}>
       <ProfilePicture>
@@ -20,27 +20,27 @@ export const MenuVertical = ({ open }) => {
       <Lista>
         <a href="#main_section" onClick={handleSetOpen}>
           <Li>
-            <Span  >About me</Span>
+            <Span >About me</Span>
           </Li>
         </a>
         <a href="#list_projects" onClick={handleSetOpen}>
           <Li>
-            <Span  >Projects</Span>
+            <Span>Projects</Span>
           </Li>
         </a>
         <a href="#skills" onClick={handleSetOpen}>
           <Li>
-            <Span  >My skills</Span>
+            <Span>My skills</Span>
           </Li>
         </a>
         <a href="https://drive.google.com/file/d/1A6Zuh8nJFGPbIBI-aTTPKZdIi-P7-x_E/view" target="_blank" onClick={handleSetOpen}>
           <Li>
-            <Span  >Resume</Span>
+            <Span>Resume</Span>
           </Li>
         </a>
         <a href="#contact_form" onClick={handleSetOpen}>
           <Li>
-            <Span  >Contact me</Span>
+            <Span>Contact me</Span>
           </Li>
         </a>
       </Lista>

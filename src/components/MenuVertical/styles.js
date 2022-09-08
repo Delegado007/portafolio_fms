@@ -45,9 +45,11 @@ export const Lista = styled.ul`
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  
-  @media (max-width: 670px) {
-    
+  & a {
+    border-bottom: 1px solid #282828;    
+  }
+  & a:nth-child(1) {
+    border-top: 1px solid #282828;
   }
 `
 
@@ -56,15 +58,10 @@ export const Li = styled.li`
   width: 8rem;
   text-align: center;
   display: block;  
-  line-height: 3.8rem;
-  border-bottom: 1px solid #282828;
+  line-height: 3.8rem;  
   position: relative;  
   font-size: 1rem;
-  font-weight: bold;
-  /* letter-spacing: 2px; */
-  &:first-child{
-    border-top: 1px solid #282828;
-  }  
+  font-weight: bold;  
 `
 
 export const Span = styled.span`  
@@ -89,7 +86,7 @@ export const Span = styled.span`
 
 
 export const ProfilePicture = styled.div`
-    overflow: hidden;
+  overflow: hidden;
   height: 180px;
   width: 100%;
   & img {
@@ -108,8 +105,7 @@ export const LinksSVG = styled.div`
   min-height: 50px;
   z-index: 1002;
   @media (max-width: 745px) {
-  z-index: 1002;
-
+    z-index: 1002;
     max-width: 128px;
     justify-content: center;    
     & svg {

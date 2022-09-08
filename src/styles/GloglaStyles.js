@@ -2,9 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import { MPlusCodeLatin } from './fontMPlusCode';
 
 export const GlobalStyles = createGlobalStyle`
-/* m-plus-code-latin-regular - latin */
   ${MPlusCodeLatin}
-
   html {
     font-family: 'M PLUS Code Latin';
     box-sizing: border-box;
@@ -34,8 +32,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-image: linear-gradient(to right bottom, #1d1d1d, #1f1f1f, #222222, #242424, #272727, #272627, #272527, #282427, #281f21, #271a1a, #24170f, #1f1400);
-    
+    background-image: linear-gradient(to right bottom, #1d1d1d, #1f1f1f, #222222, #242424, #272727, #272627, #272527, #282427, #281f21, #271a1a, #24170f, #1f1400);    
     margin: 0px;
     width: 100%;
     color: white;

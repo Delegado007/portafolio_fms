@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerModal = styled.div`
-
   display: flex;
   z-index: 10000;
   position: fixed;
@@ -16,14 +15,10 @@ export const ContainerModal = styled.div`
     display: none;
     opacity: 0;
   }
-  & div {
-    
-  }
   & div h1 {
     padding-right: 8px;
     color: #00E09D;    
-  }
-  
+  }  
 `
 
 export const Box = styled.div`

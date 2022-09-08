@@ -32,7 +32,6 @@ export const ContactForm = () => {
     }
   }
 
-  console.log(showMap)
   return (
     <ContainerGridForm id="contact_form">
       <ModalStatusMail status={enviado} />

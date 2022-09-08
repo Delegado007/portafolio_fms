@@ -16,7 +16,6 @@ export const ContactIn = styled.div`
   height: 100%;
   margin: auto;
   padding: 0 24px 100px;
-  /* box-shadow: 0px 0px 10px 0px #666; */
   @media (max-width: 960px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -25,8 +24,7 @@ export const ContactIn = styled.div`
 
 export const Article = styled.article`  
   overflow: hidden;
-  display: flex;
-  
+  display: flex;  
   & {
     animation-duration: 1.1s;
   }
@@ -34,8 +32,7 @@ export const Article = styled.article`
 
 export const H2 = styled.h2`
   position: relative;  
-  font-size: 3rem;
-  
+  font-size: 3rem;  
   letter-spacing: 3px;
   &:hover{
     cursor: pointer;
@@ -59,7 +56,6 @@ export const H2 = styled.h2`
       opacity: 0.8;
     }    
   }  
-  
 `
 
 export const Span = styled.span`
@@ -69,9 +65,6 @@ export const Span = styled.span`
   left: 0;
   font-family: 'M PLUS Code Latin';
   font-weight: bold;
-  
-  /* letter-spacing: 2px; */
-  
 `
 
 export const ContactMap = styled.div`  
@@ -94,7 +87,6 @@ export const Form = styled.form`
   height: auto;  
   @media (max-width: 960px) {
     grid-area: 1 / 1 / 2 / 2;    
-    
   }
   & form {
     animation-duration: 1.5s;   
@@ -139,7 +131,6 @@ export const InputText = styled.input`
   border: 0;
   max-width: 600px;
   background-color: #2b2b2b;
-  /* border-bottom: 1px solid #fff; */
   outline: none;
   border-radius: 0;
   -webkit-appearance: none;
@@ -174,8 +165,7 @@ export const TextArea = styled.textarea`
   min-height: 150px;
   resize: none;
   color: #fff;
-  outline: none;
-  
+  outline: none;  
   margin-top: 10px;
   padding: 8px;
   &:focus, &:valid{

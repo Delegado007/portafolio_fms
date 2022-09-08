@@ -22,7 +22,6 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
 
     buttonsAsArray.map((item, index) => {
       if (posicion === index) {
-        console.log("entra");
         item.className += " active";
       } else {
         item.classList.remove("active");
@@ -31,7 +30,6 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
     setIndexImg(posicion);
   }
 
-  console.log("ContainerProjects")
   return (
     <div ref={element}>
       <Card className="card animate__fadeInUp">
@@ -40,8 +38,6 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
         </CardBackground>
         <CardOverlay className="card__overlay" />
         <CardContent className="card__content" >
-          {/* <CardCategory className="card__category">{category}</CardCategory>
-            <CardHeading className="card__heading">{heading}</CardHeading> */}
           <h1>{heading}</h1>
           <p>{resume}</p>
           <ContainerGridIconSVG>
@@ -51,9 +47,7 @@ export const ProjectCard = ({ id, category, heading, background, resume, urlSite
                   <img src={technology} alt="technology used" />
                 </div>
               )
-            })
-
-            }
+            })}
           </ContainerGridIconSVG>
         </CardContent>
         <CardFooter className="card__footer">

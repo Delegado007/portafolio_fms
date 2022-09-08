@@ -1,15 +1,6 @@
-import styled, { keyframes } from 'styled-components'
-
-const backgroundDark = "#2d3548";
-const textLight = "rgba(255,255,255,0.6)";
-const textLighter = "rgba(255,255,255,0.9)";
+import styled, { keyframes } from 'styled-components';
 const spacingS = "8px";
-const spacingM = "16px";
 const spacingL = "24px";
-const spacingXl = "32px";
-const spacingXxl = "64px";
-const widthContainer = "1200px";
-const backgroundColor = "#1d1d1d";
 const colorParticle = "#ffa500";
 
 const glowing_button_85 = keyframes`
@@ -23,8 +14,6 @@ const glowing_button_85 = keyframes`
     background-position: 0 0;
   }
 `
-
-
 
 export const Card = styled.div`
   position: relative;  
@@ -44,9 +33,7 @@ export const Card = styled.div`
   &:hover .card__background{
   /* transform: scale(1.03) translateZ(0); */
   filter: brightness(1) contrast(1);  
-  }
- 
-  
+  }  
 `
 
 export const CardBackground = styled.div`
@@ -62,8 +49,8 @@ export const CardBackground = styled.div`
   transform-origin: center;
   transform: scale(1) translateZ(0);
   transition: 
-    filter 0.5s linear,
-    transform 200ms linear;
+  filter 0.5s linear,
+  transform 200ms linear;
   overflow: hidden;
   & img {
     height: 100%;
@@ -116,18 +103,15 @@ export const CardHeading = styled.h3`
 
 export const CardFooter = styled.div`
   left: 0;
-  /* margin: ${spacingL}; */
   position: absolute;
   top: 280px;
   & div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: ${spacingS};
-    
+    margin-top: ${spacingS};    
   }
 `
-
 
 export const CardOverlay = styled.div`
   position: absolute;
@@ -161,8 +145,7 @@ export const CardOverlay = styled.div`
     height: 100%;
     box-shadow: none;
     border-radius: 1rem;
-    opacity: 0.99;
-    
+    opacity: 0.99;    
     &::before {
       content: none;
     }
@@ -175,10 +158,8 @@ export const CardOverlay = styled.div`
       opacity: 1;
       visibility: visible;
     }
-  }
-  
+  }  
 `
-
 
 export const ButtonDeploy = styled.button`
   position: absolute;  
@@ -220,9 +201,7 @@ export const ButtonDeploy = styled.button`
     height: calc(100% + 4px);
     animation: glowing-button-85 20s linear infinite;
     transition: opacity 0.3s ease-in-out;
-    /* border-radius: 10px 0 0 10px; */
-    border-radius: 10px 0 0 10px;
-    
+    border-radius: 10px 0 0 10px;    
   }
   &::after{    
     content: "";
@@ -249,71 +228,69 @@ export const ButtonDeploy = styled.button`
 `
 
 export const ButtonCode = styled.button`
-position: absolute;  
-justify-content: flex-end;
-background-image: linear-gradient(#272727, #222);
-width: 50px;
-height: 80px;
-border: none;
-outline: none;
-right: 0px;
-bottom: 180px;
-border-radius: 10px 0 0 10px;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-box-shadow: rgba(56, 56, 56, 0.4) 0 2px 4px,rgba(46, 46, 46, 0.3) 0 7px 13px -3px,#080808 0 -3px 0 inset;
-cursor: pointer;  
-&::before {
-  content: "";
-  background: linear-gradient(
-  45deg,
-  #08FDB3,
-  #00A97F,
-  #FFA600,
-  #898989,
-  #898989,
-  #B07200,
-  #363636,
-  #008C69,
-  #EC9A00
-  );
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  background-size: 400%;    
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: ${glowing_button_85} 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  /* border-radius: 10px 0 0 10px; */
-  border-radius: 10px;  
-}
-
-&::after{  
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: absolute;  
+  justify-content: flex-end;
   background-image: linear-gradient(#272727, #222);
-  box-shadow: rgba(56, 56, 56, 0.4) 0 2px 4px,rgba(46, 46, 46, 0.3) 0 7px 13px -3px,#080808 0 -3px 0 inset;
-  left: 0;
-  top: 0;
+  width: 50px;
+  height: 80px;
+  border: none;
+  outline: none;
+  right: 0px;
+  bottom: 180px;
   border-radius: 10px 0 0 10px;
-}
-& img {
-  height: 85px;
-  z-index: 9;
-  position: absolute;
-  right: -17px;
-  bottom: -3px;
-  transition: 0.3s;
-}
-&:hover img {
-  transform: scale(1.1) rotate3d(0.2, 0.2, 0.7, 18deg);
-}
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: rgba(56, 56, 56, 0.4) 0 2px 4px,rgba(46, 46, 46, 0.3) 0 7px 13px -3px,#080808 0 -3px 0 inset;
+  cursor: pointer;  
+  &::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #08FDB3,
+      #00A97F,
+      #FFA600,
+      #898989,
+      #898989,
+      #B07200,
+      #363636,
+      #008C69,
+      #EC9A00
+    );
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background-size: 400%;    
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: ${glowing_button_85} 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;  
+  }
+  &::after{  
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#272727, #222);
+    box-shadow: rgba(56, 56, 56, 0.4) 0 2px 4px,rgba(46, 46, 46, 0.3) 0 7px 13px -3px,#080808 0 -3px 0 inset;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+  }
+  & img {
+    height: 85px;
+    z-index: 9;
+    position: absolute;
+    right: -17px;
+    bottom: -3px;
+    transition: 0.3s;
+  }
+  &:hover img {
+    transform: scale(1.1) rotate3d(0.2, 0.2, 0.7, 18deg);
+  }
 `
 
 export const GoSite = styled.button`

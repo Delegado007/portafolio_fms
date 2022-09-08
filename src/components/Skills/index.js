@@ -7,7 +7,6 @@ export const Skills = () => {
   useEffect(() => {
     setSkills(dataSkills.stack)
   }, [])
-  console.log(skills)
   return (
     <>
       <ContainerTitle>
@@ -78,7 +77,5 @@ export const Skills = () => {
         })}
       </Container>
     </>
-
-
   )
 }

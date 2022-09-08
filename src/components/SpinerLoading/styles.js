@@ -1,5 +1,4 @@
-import styled, { keyframes } from "styled-components"
-
+import styled, { keyframes } from "styled-components";
 const colorSpinner = '#FFA600';
 
 const animateC = keyframes`

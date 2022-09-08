@@ -5,12 +5,10 @@ import { setOpenMenu } from "../../slices/uiSlice";
 
 export const Burguer = ({ open }) => {
   const dispatch = useDispatch();
-
   const handleSetOpen = () => {
     dispatch(setOpenMenu(!open));
   }
 
-  console.log("Burguer");
   return (
     <>
       <StyledBurger open={open} onClick={handleSetOpen} >

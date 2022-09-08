@@ -13,5 +13,3 @@ export const GitHub = () => (
     </svg>
   </a>
 )
-
-

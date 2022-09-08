@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ProjectCard } from '@components/ProjectsCard';
 import { ContainerTitle, Article, H2Title, SpanTitle, Section, Container, CardGrid } from "./styles";
 
 export const ListOfProjects = ({ loadDataProjects }) => {
 
-  console.log("ListOfProjects")
   return (
     <>
       <ContainerTitle>

@@ -1,9 +1,8 @@
 import React from "react";
-import { Article, H1, Span, Section, H3 } from './styles'
-
+import { Article, H1, Span, Section, H3 } from './styles';
 
 export const MainSection = () => {
-  console.log("MainSection");
+
   return (
     <Section id="main_section">
       <Article className="animate__rubberBand">
