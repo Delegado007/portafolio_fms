@@ -5,7 +5,7 @@ export const MainSection = () => {
 
   return (
     <Section id="main_section">
-      <Article className="animate__rubberBand">
+      <Article className="rubberBand">
         <H1>
           <Span aria-hidden="true">H</Span>
           H
@@ -22,7 +22,7 @@ export const MainSection = () => {
           <Span aria-hidden="true">,</Span>
         </H1>
       </Article>
-      <Article className="animate__rubberBand">
+      <Article className="rubberBand">
         <H1>
           <Span aria-hidden="true">I</Span>
           I
@@ -69,7 +69,7 @@ export const MainSection = () => {
           <Span aria-hidden="true">o</Span>
         </H1>
       </Article>
-      <Article className="animate__rubberBand">
+      <Article className="rubberBand">
         <H1>
           <Span aria-hidden="true">W</Span>
           W
@@ -131,7 +131,7 @@ export const MainSection = () => {
           <Span aria-hidden="true">r</Span>
         </H1>
       </Article>
-      <Article className="animate__backInUp">
+      <Article className="backInUp">
         <H3>
           Welcome to my page, where you can find all the technologies and projects i made for fun, study and challenge myself!<br></br>
           Like also the tools i will use to develop your bussines in the digital world!

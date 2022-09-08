@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { glitch } from './../../styles/glitchAnimation';
-import 'animate.css'
-
+import { glitch, animateRubberBand, rubberBand, animateBackInUp, backInUp } from './../../styles/glitchAnimation';
 
 export const Section = styled.section`
   height: 100vh;
@@ -20,8 +18,13 @@ export const Section = styled.section`
 
 export const Article = styled.article`  
   overflow: hidden;
-  display: flex; 
-  & {
+  display: flex;
+  &.rubberBand {
+    animation: ${animateRubberBand}, ${rubberBand};
+    animation-duration: 1.1s;
+  }
+  &.backInUp {
+    animation: ${animateBackInUp}, ${backInUp};
     animation-duration: 1.1s;
   }
 `

@@ -1,7 +1,7 @@
 import React from "react";
 import { ModalStatusMail } from "../ModalStatusMail";
 import { useNearScreen } from '@hoocks/useNearScreen';
-import { ContainerGridForm, ContactIn, Article, H2, Span, ContactMap, Form, ContainerInput, InputText, TextArea, InputButton } from "./styles";
+import { ContainerGridForm, ContactIn, Article, H2, Span, ContactMap, Form, ContainerInput, InputText, TextArea, InputButton, Iframe } from "./styles";
 import { useState } from "react";
 import axios from 'axios';
 
@@ -109,9 +109,9 @@ export const ContactForm = () => {
         </Form>
         <ContactMap ref={map}>
           {showMap &&
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105058.66985255587!2d-68.39524922662146!3d-34.627331825692565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1661709310308!5m2!1ses!2sar" className="animate__flipInX" width="100%" height="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-
+            <Iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105058.66985255587!2d-68.39524922662146!3d-34.627331825692565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1661709310308!5m2!1ses!2sar" width="100%" height="100%" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </Iframe>
           }
         </ContactMap>
       </ContactIn>

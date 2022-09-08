@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { glitch } from './../../styles/glitchAnimation';
+import { animateBackInUp, backInUp } from './../../styles/glitchAnimation';
 
 export const ContainerGridForm = styled.div`
   min-height: 500px;  
@@ -237,4 +238,10 @@ export const InputButton = styled.button`
       color: black;
     }
   }
+`
+
+export const Iframe = styled.div`
+  height: 100%;
+  animation: ${animateBackInUp}, ${backInUp}; 
+  animation-duration: 1.1s;
 `
