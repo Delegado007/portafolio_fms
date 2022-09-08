@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 const backgroundDark = "#2d3548";
 const textLight = "rgba(255,255,255,0.6)";
@@ -11,6 +11,19 @@ const spacingXxl = "64px";
 const widthContainer = "1200px";
 const backgroundColor = "#1d1d1d";
 const colorParticle = "#ffa500";
+
+const glowing_button_85 = keyframes`
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+`
+
 
 
 export const Card = styled.div`
@@ -211,19 +224,7 @@ export const ButtonDeploy = styled.button`
     border-radius: 10px 0 0 10px;
     
   }
-  @keyframes glowing-button-85 {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  &::after{
-    
+  &::after{    
     content: "";
     position: absolute;
     width: 100%;
@@ -245,7 +246,8 @@ export const ButtonDeploy = styled.button`
   &:hover img {
     transform: scale(1.1) translateY(-5px);
   }
-  `
+`
+
 export const ButtonCode = styled.button`
 position: absolute;  
 justify-content: flex-end;
@@ -284,23 +286,12 @@ cursor: pointer;
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
+  animation: ${glowing_button_85} 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   /* border-radius: 10px 0 0 10px; */
-  border-radius: 10px;
-  
+  border-radius: 10px;  
 }
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
+
 &::after{  
   content: "";
   position: absolute;
@@ -383,20 +374,13 @@ export const ContainerGridIconSVG = styled.div`
   grid-row-gap: 24px;
   width: 100%;
   padding-top: 24px;
-  & div {
-    
+  & div {    
     width: 50px;
     height: 50px;
     margin: auto;
   }
-  & div img {
-    
-    width: 50px;
-    
+  & div img {    
+    width: 50px;    
     margin: auto;
   }
-`
-
-export const SVGInGrid = styled.div`
-
 `

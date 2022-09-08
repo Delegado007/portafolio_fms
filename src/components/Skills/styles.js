@@ -14,18 +14,12 @@ export const Container = styled.div`
   } 
   @media(min-width: 1140px){  
     grid-template-columns: repeat(3, 1fr);  
-  }
-  
+  }  
 `
 
-
-
-export const Box = styled.div`
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around
+export const Box = styled.div`  
+  position: relative;
+  width: 100%; 
 `
 
 export const Card = styled.div`
@@ -61,9 +55,11 @@ export const Card = styled.div`
   }
 `
 export const Percent = styled.div`
-  position: relative;
+  position: absolute;
   width: 90px;
   height: 90px;
+  top: calc(50% - 50px);
+  right: calc(25% - 45px);
   border-radius: 50%;
   box-shadow: inset 0 0 50px #000;
   background:#222;
@@ -99,14 +95,12 @@ export const Span = styled.span`
   transition: 0.5s;
 `
 
-// .card: hover.percent.num h2 span
-// {
-//   color: #fff;
-// }
-
 export const Technology = styled.div`
-  display: flex;
-  position: relative;
+  position: absolute;
+  width: 150px;
+  top: calc(50% - 50px);
+  right: calc(75% - 75px);
+  display: flex;  
   flex-direction: column;
   max-width: 150px;
   & img {
@@ -116,10 +110,6 @@ export const Technology = styled.div`
   }
 `
 
-// .card: hover.text
-// {
-//   color: #fff;
-// }
 export const SVG = styled.svg`
   position: relative;
   width: 90px;
@@ -140,12 +130,6 @@ export const SVG = styled.svg`
   }  
 `
 
-
-
-
-
-
-
 export const ContainerTitle = styled.div`
   display: flex;
   flex-direction: column;
@@ -162,9 +146,6 @@ export const ContainerTitle = styled.div`
   margin: auto;
 `
 
-
-
-
 export const Article = styled.article`  
   overflow: hidden;
   display: flex;  
@@ -175,8 +156,7 @@ export const Article = styled.article`
 
 export const H2Title = styled.h2`
   position: relative;  
-  font-size: 3rem;
-  
+  font-size: 3rem;  
   letter-spacing: 3px;
   &:hover{
     cursor: pointer;
@@ -200,17 +180,12 @@ export const H2Title = styled.h2`
       opacity: 0.8;
     }  
   }  
-  
 `
 
 export const SpanTitle = styled.span`
   font-size: 3rem;
   position: absolute;
   top: 0;
-  left: 0;
-  font-family: 'M PLUS Code Latin';
+  left: 0;  
   font-weight: bold;
-  
-  /* letter-spacing: 2px; */
- 
 `
