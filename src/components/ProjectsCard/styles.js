@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { jackInTheBox } from '../../styles/animations';
 const spacingS = "8px";
 const spacingL = "24px";
 const colorParticle = "#ffa500";

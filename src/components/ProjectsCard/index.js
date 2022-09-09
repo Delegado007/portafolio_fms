@@ -12,7 +12,7 @@ export const ProjectCard = ({ id, heading, background, resume, urlSite, urlCode,
     if (firstButtons !== null) {
       firstButtons.className += " active"
     }
-  }, [show])
+  }, [])
 
   const handleImgChange = (posicion) => {
     const buttons = document.querySelectorAll(`.button_change_img_${id}`);
