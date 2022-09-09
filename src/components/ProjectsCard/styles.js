@@ -28,8 +28,6 @@ export const Card = styled.div`
   -webkit-box-shadow: 10px 10px 39px 10px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 39px 10px rgba(0,0,0,1);
   box-shadow: 10px 10px 39px 10px rgba(0,0,0,1);
-  animation: ${jackInTheBox};
-  animation-duration: 1.1s;  
   &:hover .card__background{
   /* transform: scale(1.03) translateZ(0); */
   filter: brightness(1) contrast(1);  
