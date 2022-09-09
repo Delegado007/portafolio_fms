@@ -10,7 +10,7 @@ import { SpinerLoading } from '../../components/SpinerLoading';
 import jsonDataProjects from './../../../projects.json';
 import { setLoading } from "../../slices/uiSlice";
 import { useDispatch } from 'react-redux';
-import { Skills } from '@components/Skills';
+import { ListOfSkills } from '@components/ListOfSkills';
 
 export const App = () => {
   const [loadDataProjects, setDataProjects] = useState([])
@@ -35,7 +35,7 @@ export const App = () => {
             <ParticlesComponent />
             <Burguer open={open} />
             <ListOfProjects loadDataProjects={loadDataProjects} />
-            <Skills />
+            <ListOfSkills />
             <ContactForm />
           </div>
         </>

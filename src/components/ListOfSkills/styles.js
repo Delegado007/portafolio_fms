@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { glitch } from './../../styles/animations.js';
+import { glitch, rubberBand, jackInTheBox } from './../../styles/animations.js';
 
 export const Container = styled.div`
   position:relative;
@@ -148,8 +148,9 @@ export const ContainerTitle = styled.div`
 
 export const Article = styled.article`  
   overflow: hidden;
-  display: flex;  
-  & {
+  display: flex;    
+  &.rubberBand {
+    animation: ${jackInTheBox};
     animation-duration: 1.1s;
   }
 `

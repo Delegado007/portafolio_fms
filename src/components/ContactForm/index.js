@@ -1,6 +1,6 @@
 import React from "react";
 import { ModalStatusMail } from "../ModalStatusMail";
-import { useNearScreen } from '@hoocks/useNearScreen';
+import { useNearScreen } from '@hooks/useNearScreen';
 import { ContainerGridForm, ContactIn, Article, H2, Span, ContactMap, Form, ContainerInput, InputText, TextArea, InputButton, Iframe } from "./styles";
 import { useState } from "react";
 import axios from 'axios';

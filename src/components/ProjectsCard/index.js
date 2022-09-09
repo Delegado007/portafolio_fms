@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Card, CardBackground, CardContent, CardFooter, Button, CardOverlay, ButtonDeploy, ButtonCode, ContainerGridIconSVG } from './styles'
-import { useNearScreen } from '@hoocks/useNearScreen';
+import { useNearScreen } from '@hooks/useNearScreen';
 
 export const ProjectCard = ({ id, category, heading, background, resume, urlSite, urlCode, stack }) => {
   const code = "assets/code.png";
