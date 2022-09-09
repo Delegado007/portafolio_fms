@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import { glitch } from './../../styles/glitchAnimation';
-import { animateBackInUp, backInUp } from './../../styles/glitchAnimation';
+import styled from "styled-components";
+import { glitch, animateBackInUp, backInUp } from './../../styles/animations.js';
+
 
 export const ContainerGridForm = styled.div`
   min-height: 500px;  

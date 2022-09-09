@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { glitch } from './../../styles/glitchAnimation';
+import { glitch } from './../../styles/animations.js';
 
 const spacingL = "24px";
 const widthContainer = "1200px";

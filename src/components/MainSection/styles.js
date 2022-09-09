@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { glitch, animateRubberBand, rubberBand, animateBackInUp, backInUp } from './../../styles/glitchAnimation';
+import { glitch, animateRubberBand, rubberBand, animateBackInUp, backInUp } from './../../styles/animations.js';
 
 export const Section = styled.section`
   height: 100vh;

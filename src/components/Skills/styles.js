@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { glitch } from './../../styles/glitchAnimation';
+import { glitch } from './../../styles/animations.js';
 
 export const Container = styled.div`
   position:relative;
