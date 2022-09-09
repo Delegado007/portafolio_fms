@@ -65,7 +65,7 @@ export const Skills = () => {
                 <Percent>
                   <SVG number={skill.percent}>
                     <circle cx="42" cy="42" r="42"></circle>
-                    <circle cx="42" cy="42" r="42" style={{ strokeDashoffset: `calc(264 - (264 * ${skill.percent} ) / 100)`, stroke: `${skill.fill}` }} ></circle>
+                    <circle cx="42" cy="42" r="42" style={{ stroke: `${skill.fill}`, strokeDashoffset: `calc(264px - (264px * ${skill.percent} ) / 100)` }} ></circle>
                   </SVG>
                   <Number>
                     <H2 className="change__color">{skill.percent}<Span className="change__color">%</Span></H2>

@@ -106,7 +106,6 @@ export const Technology = styled.div`
   & img {
     margin: auto;
     height: 80px;
-    width: fit-content;
   }
 `
 
@@ -125,8 +124,8 @@ export const SVG = styled.svg`
     transform: translate(3px, 3px);
   }
   & circle:nth-child(2) {
-    stroke-dasharray: 264;
-    stroke-dashoffset: 264;
+    stroke-dasharray: 264px;
+    stroke-dashoffset: 264px;
   }  
 `
 
