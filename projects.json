@@ -16,9 +16,9 @@
         "assets/webpack.png"
       ],
       "background": [
-        "assets/captures/ruadis1.png",
-        "assets/captures/ruadis2.png",
-        "assets/captures/ruadis3.png"
+        "assets/captures/ruadis1.webp",
+        "assets/captures/ruadis2.webp",
+        "assets/captures/ruadis3.webp"
       ]
     },
     {
@@ -37,9 +37,9 @@
         "assets/webpack.png"
       ],
       "background": [
-        "assets/captures/petgram1.png",
-        "assets/captures/petgram2.png",
-        "assets/captures/petgram3.png"
+        "assets/captures/petgram1.webp",
+        "assets/captures/petgram2.webp",
+        "assets/captures/petgram3.webp"
       ]
     },
     {
@@ -58,8 +58,8 @@
         "assets/redux.png"
       ],
       "background": [
-        "assets/captures/pokedux1.png",
-        "assets/captures/pokedux2.png"
+        "assets/captures/pokedux1.webp",
+        "assets/captures/pokedux2.webp"
       ]
     },
     {
@@ -78,8 +78,8 @@
         "assets/webpack.png"
       ],
       "background": [
-        "assets/captures/oyemusica1.png",
-        "assets/captures/oyemusica2.png"
+        "assets/captures/oyemusica1.webp",
+        "assets/captures/oyemusica2.webp"
       ]
     }
   ]

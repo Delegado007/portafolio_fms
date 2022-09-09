@@ -106,6 +106,7 @@ export const Technology = styled.div`
   & img {
     margin: auto;
     height: 80px;
+    width: auto;
   }
 `
 

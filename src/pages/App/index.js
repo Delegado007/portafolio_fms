@@ -21,7 +21,7 @@ export const App = () => {
     setDataProjects(jsonDataProjects.projects);
     setTimeout(() => {
       dispatch(setLoading(false))
-    }, 1800)
+    }, 1)
   }, []);
 
   return (

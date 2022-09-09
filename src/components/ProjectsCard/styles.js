@@ -357,7 +357,7 @@ export const ContainerGridIconSVG = styled.div`
     margin: auto;
   }
   & div img {    
-    width: 50px;    
-    margin: auto;
+    height: 50px;
+    width: auto;
   }
 `
