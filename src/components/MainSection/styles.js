@@ -9,8 +9,7 @@ export const Section = styled.section`
   justify-content: center;
   padding: 0 24px 0 24px;
   max-width: 1200px;
-  margin: auto;
-  
+  margin: auto;  
   @media (max-width: 745px) {
     padding-right: 1rem;
   } 

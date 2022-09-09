@@ -8,7 +8,6 @@ import { rootReducer } from './reducers/rootReducer';
 
 const store = createStore(
   rootReducer
-
 );
 
 const container = document.getElementById('root')

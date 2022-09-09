@@ -6,6 +6,7 @@ export const ContainerMainSection = styled.div`
   height: 100vh;
   position: relative;
   min-height: 100vh;
+  margin-bottom: 30px;
 `
 
 export const ContainerParticles = styled.div`

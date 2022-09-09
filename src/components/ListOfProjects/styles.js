@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { glitch } from './../../styles/animations.js';
+import { glitch, rubberBand, animateRubberBand } from './../../styles/animations.js';
 
 const spacingL = "24px";
 const widthContainer = "1200px";
@@ -50,12 +50,14 @@ export const ContainerTitle = styled.div`
   padding: 0 24px 24px 24px;
   max-width: 1200px;
   margin: auto;
+  min-height: 35px;
 `
 
 export const Article = styled.article`  
   overflow: hidden;
   display: flex;  
-  & {
+  &.rubberBand {
+    animation: ${animateRubberBand}, ${rubberBand};
     animation-duration: 1.1s;
   }
 `

@@ -45,6 +45,3 @@ export const GlobalStyles = createGlobalStyle`
   }
 }
 `
-
-
-
