@@ -34,6 +34,9 @@ async function precache() {
     '/assets/tailwindCSS.png',
     '/assets/bootstrap.png',
     '/assets/node.png',
+    '/assets/jsonWebTokens.png',
+    '/assets/passport.png',
+    '/assets/sequelize.png',
     '/assets/captures/ruadis1.webp',
     '/assets/captures/ruadis2.webp',
     '/assets/captures/ruadis3.webp',
@@ -44,6 +47,8 @@ async function precache() {
     '/assets/captures/pokedux2.webp',
     '/assets/captures/oyemusica1.webp',
     '/assets/captures/oyemusica2.webp',
+    '/assets/captures/ruadisdb1.webp',
+    '/assets/captures/ruadisdb2.webp',
   ])
 }
 

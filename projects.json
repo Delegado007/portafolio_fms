@@ -81,6 +81,25 @@
         "assets/captures/oyemusica1.webp",
         "assets/captures/oyemusica2.webp"
       ]
+    },
+    {
+      "id": 5,
+      "cardCategory": "Back End",
+      "cardHeading": "Ruadis DB",
+      "resume": "The database for Ruadis is built with Node.js and runs on PostgreSQL using the Sequelize ORM. It has authentication and authorization for the user, all this thanks to JSON Web Tokens and passport.js technology.",
+      "urlSite": "https://serene-ocean-03988.herokuapp.com/",
+      "urlCode": "https://github.com/Delegado007/ruadis_back_end",
+      "stack": [
+        "assets/node.png",
+        "assets/postgresql.png",
+        "assets/jsonWebTokens.png",
+        "assets/sequelize.png",
+        "assets/passport.png"
+      ],
+      "background": [
+        "assets/captures/ruadisdb1.webp",
+        "assets/captures/ruadisdb2.webp"
+      ]
     }
   ]
 }
