@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { glitch, rubberBand, animateRubberBand } from './../../styles/animations.js';
+import { glitch, rubberBand, animateRubberBand, animateBackInUp, backInUp } from './../../styles/animations.js';
 
 export const Container = styled.div`
   position:relative;
@@ -40,6 +40,10 @@ export const Article = styled.article`
     animation: ${animateRubberBand}, ${rubberBand};
     animation-duration: 1.1s;
   }
+  &.backInUp {
+    animation: ${animateBackInUp}, ${backInUp};
+    animation-duration: 1.1s;
+  }
 `
 
 export const H2Title = styled.h2`
@@ -76,4 +80,14 @@ export const SpanTitle = styled.span`
   top: 0;
   left: 0;  
   font-weight: bold;
+`
+
+export const H3 = styled.h3`
+  max-width: 470px;
+  text-align: justify;
+  color: #FDD942;  
+  @media (max-width: 540px) {
+    max-width: 310px;
+    font-size: 1rem;
+  } 
 `

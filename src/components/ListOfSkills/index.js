@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, ContainerTitle, Article, H2Title, SpanTitle } from "./styles";
+import { Container, ContainerTitle, Article, H2Title, SpanTitle, H3 } from "./styles";
 import dataSkills from './../../../stack.json';
 import { useNearScreen } from '@hooks/useNearScreen.js';
 import { CardSkill } from "@components/CardSkill";
@@ -56,6 +56,11 @@ export const ListOfSkills = () => {
                 s
                 <SpanTitle aria-hidden="true">s</SpanTitle>
               </H2Title>
+            </Article>
+            <Article className="backInUp">
+              <H3>
+                The skill percentage represents the experience and deepening on the bases of the technologies shown below.
+              </H3>
             </Article>
           </>
         }
