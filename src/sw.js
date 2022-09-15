@@ -2,11 +2,25 @@ self.addEventListener('install', event => {
   event.waitUntil(precache())
 })
 
+self.addEventListener('fetch', event => {
+  const request = event.request;
+  if (request.method !== 'GET') {
+    return;
+  }
+
+  // buscar en cache
+  event.respondWith(cachedResponse(request));
+
+  // actualizar el cache
+  event.waitUntil(updateCache(request));
+});
+
 async function precache() {
   const cache = await caches.open("v1")
-  return cache.addAll(
+  return cache.addAll([
     '/',
     '/index.html',
+    '/main.js',
     '/assets/html5.png',
     '/assets/css3.png',
     '/assets/javascript.png',
@@ -23,12 +37,24 @@ async function precache() {
     '/assets/captures/ruadis1.webp',
     '/assets/captures/ruadis2.webp',
     '/assets/captures/ruadis3.webp',
-    'assets/captures/petgram1.webp',
-    'assets/captures/petgram2.webp',
-    'assets/captures/petgram3.webp',
-    'assets/captures/pokedux1.webp',
-    'assets/captures/pokedux2.webp',
-    'assets/captures/oyemusica1.webp',
-    'assets/captures/oyemusica2.webp',
-  )
+    '/assets/captures/petgram1.webp',
+    '/assets/captures/petgram2.webp',
+    '/assets/captures/petgram3.webp',
+    '/assets/captures/pokedux1.webp',
+    '/assets/captures/pokedux2.webp',
+    '/assets/captures/oyemusica1.webp',
+    '/assets/captures/oyemusica2.webp',
+  ])
+}
+
+async function cachedResponse(request) {
+  const cache = await caches.open("v1");
+  const response = await cache.match(request);
+  return response || fetch(request);
+}
+
+async function updateCache(request) {
+  const cache = await caches.open(VERSION);
+  const response = await fetch(request);
+  return cache.put(request, response);
 }
