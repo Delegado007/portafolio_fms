@@ -65,8 +65,8 @@ async function cachedResponse(request) {
 async function updateCache(request) {
   const cache = await caches.open('v1');
   const response = await fetch(request);
-  if (request.url.startsWith('http')) {
-    return cache.put(request, response);
+  if (request.url.startsWith('chrome-extension') || request.url.includes('extension')) {
+    return
   }
-  return
+  return cache.put(request, response);
 }
