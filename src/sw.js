@@ -65,7 +65,8 @@ async function cachedResponse(request) {
 async function updateCache(request) {
   const cache = await caches.open('v1');
   const response = await fetch(request);
-  if (response.url.startsWith('http')) {
+  if (request.url.startsWith('http')) {
     return cache.put(request, response);
   }
+  return
 }
