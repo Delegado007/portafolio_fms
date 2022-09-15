@@ -2,11 +2,11 @@ import React from "react";
 import { GitHub } from "@components/GitHub";
 import { Linkedin } from "@components/Linkedin";
 import { Menu, Lista, Li, Span, LinksSVG, ProfilePicture } from "./styles";
-import profilePicture from '@assets/logo.png';
 import { useDispatch } from 'react-redux';
 import { setOpenMenu } from "../../slices/uiSlice";
 
 export const MenuVertical = ({ open }) => {
+  const profilePicture = "/assets/logo.png"
   const dispatch = useDispatch();
   const handleSetOpen = () => {
     dispatch(setOpenMenu(!open));
