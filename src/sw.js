@@ -12,7 +12,7 @@ self.addEventListener('fetch', event => {
   event.respondWith(cachedResponse(request));
 
   // actualizar el cache
-  if (!event.request.url.startsWith('chrome-extension') || !event.request.url.includes('extension')) {
+  if (!event.request.url.startsWith('chrome-extension') || !event.request.url.includes('extension') && event.request.url.startsWith('http')) {
     event.waitUntil(updateCache(request));
   }
 });
