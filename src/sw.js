@@ -12,7 +12,9 @@ self.addEventListener('fetch', event => {
   event.respondWith(cachedResponse(request));
 
   // actualizar el cache
-  event.waitUntil(updateCache(request));
+  if (!event.request.url.startsWith('chrome-extension') || !event.request.url.includes('extension')) {
+    event.waitUntil(updateCache(request));
+  }
 });
 
 async function precache() {
@@ -65,8 +67,5 @@ async function cachedResponse(request) {
 async function updateCache(request) {
   const cache = await caches.open('v1');
   const response = await fetch(request);
-  if (request.url.startsWith('chrome-extension') || request.url.includes('extension')) {
-    return
-  }
   return cache.put(request, response);
 }
