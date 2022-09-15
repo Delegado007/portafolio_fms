@@ -21,8 +21,7 @@ export const Menu = styled.menu`
     justify-content: center;
     right: 0;
     height: 100vh;
-    width: 100%;
-    padding-top: 3.5rem;
+    width: 100%;    
     transition: transform 0.3s ease-in-out;
   }
 `
@@ -91,10 +90,22 @@ export const ProfilePicture = styled.div`
   width: 100%;
   & img {
     width: 8rem;
-    filter: contrast(1.5) grayscale(0.8) sepia(0.6);
+  }
+  & h1 {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fdd942;
+    &::first-letter {
+      font-size: 1.3rem;
+      color: #e92a3b;
+    }
   }
   @media (max-width: 745px) {
-    display: none;
+    margin-bottom: 20px;
+    & img {
+      display:block;
+      margin:auto;
+    }
   } 
   `
 
