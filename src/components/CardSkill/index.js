@@ -4,7 +4,6 @@ import { useNearScreen } from '@hooks/useNearScreen.js'
 
 export const CardSkill = ({ urlFile, technology, percent, fill }) => {
   const [showSkill, refSkill] = useNearScreen();
-  console.log(showSkill)
   return (
     <ContainerSkills ref={refSkill}>
       {showSkill &&

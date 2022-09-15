@@ -13,7 +13,7 @@ const glowing_button_85 = keyframes`
   100% {
     background-position: 0 0;
   }
-`
+  `
 
 export const Card = styled.div`
   position: relative;  
@@ -28,9 +28,68 @@ export const Card = styled.div`
   -moz-box-shadow: 10px 10px 39px 10px rgba(0,0,0,1);
   box-shadow: 10px 10px 39px 10px rgba(0,0,0,1);
   &:hover .card__background{
-  /* transform: scale(1.03) translateZ(0); */
-  filter: brightness(1) contrast(1);  
+    /* transform: scale(1.03) translateZ(0); */
+    filter: brightness(1) contrast(1);  
   }  
+  `
+export const CardOverlay = styled.div`
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: ${({ open }) => open ? '0.99' : '1'};
+  width: ${({ open }) => open ? '100%' : '65px'};
+  height: ${({ open }) => open ? '100%' : '65px'};
+  background-color: #181818;
+  border-radius: ${({ open }) => open ? '1rem' : '1rem 0 1rem 0'};
+  box-shadow: ${({ open }) => open ? 'none' : '0 2px 4px rgba(#000000, 0.2)'};
+  transition: 0.5s;  
+  z-index: 10;  
+  & button {
+    font-size: 0.8rem;
+    border-radius: 1rem 0 1rem 0;
+    box-shadow: rgba(56, 56, 56, 0.4) 0 2px 4px,rgba(46, 46, 46, 0.3) 0 7px 13px -3px,#080808 0 -3px 0 inset;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    color: #FFA600;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 5px;
+    cursor: pointer;
+  }
+`
+
+export const CardContent = styled.div`
+  position: relative;
+  padding: ${spacingL};
+  height: 100%;
+  visibility: ${({ open }) => open ? 'visible' : 'hidden'}; 
+  z-index: 11;
+  box-sizing: border-box;
+  pointer-events: none;
+  transition: 0s;
+  opacity: ${({ open }) => open ? '1' : '0'};  
+  transition: 0.2s;
+  ${({ open }) => open ? 'transition-delay: 0.5s;' : 'transition-delay: 0s;'};
+  & h1{
+    -webkit-text-stroke: thin;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFA600;
+    padding-bottom: 16px;
+  }
+  & p {
+    -webkit-text-stroke: thin;
+    text-align: center;
+    color: #00E09D;
+  }
 `
 
 export const CardBackground = styled.div`
@@ -58,37 +117,13 @@ export const CardBackground = styled.div`
   }
 `
 
-export const CardContent = styled.div`
-  position: relative;
-  padding: ${spacingL};
-  height: 100%;
-  visibility: hidden;  
-  z-index: 11;
-  box-sizing: border-box;
-  pointer-events: none;
-  transition: 0s;
-  opacity: 0;
-  color: white;
-  & h1{
-    -webkit-text-stroke: thin;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFA600;
-    padding-bottom: 16px;
-  }
-  & p {
-    -webkit-text-stroke: thin;
-    text-align: center;
-    color: #00E09D;
-  }
-`
 
 export const CardCategory = styled.p`
   color: ${colorParticle};
   font-size: 0.9rem;
   margin-bottom: ${spacingS};
   text-transform: uppercase;
-`
+  `
 
 export const CardHeading = styled.h3`
   color: ${colorParticle};
@@ -110,53 +145,6 @@ export const CardFooter = styled.div`
   }
 `
 
-export const CardOverlay = styled.div`
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 65px;
-  height: 65px;
-  background-color: #181818;
-  border-radius: 1rem 0 1rem 0;
-  box-shadow: 0 2px 4px rgba(#000000, 0.2);
-  transition: 0.5s;
-  cursor: pointer;
-  z-index: 10;  
-  &::before {
-    text-align: center;
-    content: "More info!";
-    color: #FFA600;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-  }
-  &:hover,
-  &:focus{
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: none;
-    border-radius: 1rem;
-    opacity: 0.99;    
-    &::before {
-      content: none;
-    }
-  }
-  &:hover ~ div {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.2s 0.3s;
-    & ~ button {
-      opacity: 1;
-      visibility: visible;
-    }
-  }  
-`
 
 export const ButtonDeploy = styled.button`
   position: absolute;  
@@ -347,14 +335,18 @@ export const ContainerGridIconSVG = styled.div`
   grid-column-gap: 10px;
   grid-row-gap: 24px;
   width: 100%;
-  padding-top: 24px;
-  & div {    
-    width: 50px;
-    height: 50px;
-    margin: auto;
+  padding-top: 24px;  
+  & div img { 
+    max-height: 50px;
+    max-width: 50px;
+    height: fit-content;
   }
-  & div img {    
-    height: 50px;
-    width: auto;
-  }
+`
+export const StackContainer = styled.div`
+  display: flex;
+  justify-content: center; 
+  align-content: center;
+  width: 100%;
+  height: 50px;
+  align-items: center;
 `

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux/es/exports';
 import { legacy_createStore as createStore } from 'redux';
 import { App } from '@pages/App';
 import { rootReducer } from './reducers/rootReducer';
+// import * as serviceWorker from './serviceWorker';
 
 
 const store = createStore(
@@ -17,3 +18,5 @@ root.render(
     <App />
   </Provider>
 )
+
+

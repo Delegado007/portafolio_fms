@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardBackground, CardContent, CardFooter, Button, CardOverlay, ButtonDeploy, ButtonCode, ContainerGridIconSVG } from './styles'
+import { Card, CardBackground, CardContent, CardFooter, Button, CardOverlay, ButtonDeploy, ButtonCode, ContainerGridIconSVG, StackContainer } from './styles'
 
-export const ProjectCard = ({ id, heading, background, resume, urlSite, urlCode, stack }) => {
+export const ProjectCard = ({ id, cardHeading, background, resume, urlSite, urlCode, stack }) => {
   const code = "assets/code.png";
   const rocket = "assets/rocket.png";
-
+  const [openMoreInfo, setOpenMoreInfo] = useState(false);
   const [indexImg, setIndexImg] = useState(0);
+  const handleOpenInfo = () => {
+    setOpenMoreInfo(!openMoreInfo);
+  }
 
   useEffect(() => {
     const firstButtons = document.querySelector(`.button_change_img_${id}`);
@@ -27,24 +30,28 @@ export const ProjectCard = ({ id, heading, background, resume, urlSite, urlCode,
     })
     setIndexImg(posicion);
   }
-
   return (
     <div>
-
-      <Card className="card animate__fadeInUp">
+      <Card className="card animate__fadeInUp"  >
         <CardBackground className="card__background" >
           <img src={background[indexImg]}></img>
         </CardBackground>
-        <CardOverlay className="card__overlay" />
-        <CardContent className="card__content" >
-          <h1>{heading}</h1>
+        <CardOverlay className="card__overlay"
+          open={openMoreInfo}
+        >
+          <button onClick={() => handleOpenInfo()}>
+            {!openMoreInfo ? "More info!" : "Less info"}
+          </button>
+        </CardOverlay>
+        <CardContent className="card__content" open={openMoreInfo} >
+          <h1>{cardHeading}</h1>
           <p>{resume}</p>
           <ContainerGridIconSVG>
             {stack.map((technology) => {
               return (
-                <div key={technology}>
+                <StackContainer key={technology}>
                   <img src={technology} alt="technology used" />
-                </div>
+                </StackContainer>
               )
             })}
           </ContainerGridIconSVG>

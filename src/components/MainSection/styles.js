@@ -44,7 +44,6 @@ export const H1 = styled.h1`
       animation: ${glitch} 650ms infinite;
       clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
       transform: translate(-0.015em, -0.0125em);
-      /* color: green; */
       opacity: 0.8;
     }
     & span:last-child{
@@ -52,7 +51,6 @@ export const H1 = styled.h1`
       animation: ${glitch} 375ms infinite;
       clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
       transform: translate(0.015em, 0.018em);
-      /* color: red; */
       opacity: 0.8;
     }
   }
@@ -68,7 +66,6 @@ font-size: 4.5rem;
   left: 0;
   font-family: 'M PLUS Code Latin';
   font-weight: bold;
-  /* letter-spacing: 2px; */
   @media (max-width: 540px) {
     font-size: 3rem;
   }  

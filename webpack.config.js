@@ -4,10 +4,13 @@ const CopyPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    'main': "./src/index.js",
+    'sw': "./src/sw.js",
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: '[name].js',
     pathinfo: false
   },
   mode: 'production',

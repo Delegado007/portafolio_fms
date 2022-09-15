@@ -31,7 +31,7 @@ export const CardGrid = styled.div`
   @media(min-width: 610px){  
     grid-template-columns: repeat(2, 1fr);   
   }
-  @media(min-width: 1024px){  
+  @media(min-width: 1050px){  
     grid-template-columns: repeat(3, 1fr);
   }
 `

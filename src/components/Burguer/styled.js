@@ -8,7 +8,7 @@ export const StyledBurger = styled.div`
   right: 20px;
   z-index: 1002;
   display: none;
-  background-color: ${({ open }) => open ? 'none' : 'rgba(173, 173, 173, 0.2)'};;
+  background-color: ${({ open }) => open ? 'none' : 'rgba(173, 173, 173, 0.2)'};
   padding: 7px;
   border-radius: 5px;
   @media (max-width: 745px) {
