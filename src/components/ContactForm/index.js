@@ -19,7 +19,7 @@ export const ContactForm = () => {
     event.preventDefault();
     setLoading(true);
     try {
-      await axios.post("https://sheltered-bastion-73111.herokuapp.com/send_mail", { name, mail, message });
+      await axios.post("https://nodemailer-production.up.railway.app/send_mail", { name, mail, message });
       setName("");
       setMail("");
       setMessage("");
