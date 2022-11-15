@@ -6,14 +6,14 @@ export const Container = styled.div`
   margin: auto;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);  
+  grid-template-columns: repeat(2, 1fr);  
   width: 100%;
   margin-bottom: 90px;
   @media(min-width: 625px){  
-    grid-template-columns: repeat(2, 1fr);  
+    grid-template-columns: repeat(3, 1fr);  
   } 
   @media(min-width: 1140px){  
-    grid-template-columns: repeat(3, 1fr);  
+    grid-template-columns: repeat(4, 1fr);  
   }  
 `
 

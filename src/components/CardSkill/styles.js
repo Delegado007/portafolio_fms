@@ -13,7 +13,7 @@ export const Box = styled.div`
 export const Card = styled.div`
   margin: 24px auto;
   position: relative;
-  width: 300px;
+  width: 180px;
   background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
   display: flex;
   align-items: center;
@@ -24,8 +24,7 @@ export const Card = styled.div`
   transition: 0.5s;
   cursor: pointer;
   animation: ${jackInTheBox};
-  animation-duration: 1.1s;
-  min-width: 200px;
+  animation-duration: 1.1s;  
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
@@ -45,29 +44,7 @@ export const Card = styled.div`
     z-index: 1;
   }
 `
-export const Percent = styled.div`
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  top: calc(50% - 50px);
-  right: calc(25% - 45px);
-  border-radius: 50%;
-  box-shadow: inset 0 0 50px #000;
-  background:#222;
-  z-index: 1000;
-`
 
-export const Number = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-`
 
 export const H2 = styled.h2`
   color:#777;
@@ -90,7 +67,7 @@ export const Technology = styled.div`
   position: absolute;
   width: 150px;
   top: calc(50% - 50px);
-  right: calc(75% - 75px);
+  right: calc(50% - 75px);
   display: flex;  
   flex-direction: column;
   max-width: 150px;

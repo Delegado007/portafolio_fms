@@ -59,7 +59,7 @@ export const ListOfSkills = () => {
             </Article>
             <Article className="backInUp">
               <H3>
-                The skill percentage represents the experience and deepening on the bases of the technologies shown below.
+                Below are only some of the technologies that I have used throughout my career, for more details do not hesitate to contact me!
               </H3>
             </Article>
           </>
