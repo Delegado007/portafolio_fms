@@ -3,7 +3,27 @@
     {
       "id": 1,
       "cardCategory": "Front End",
-      "cardHeading": "Ruadis Librería",
+      "cardHeading": "Ruadis e-commerce v2",
+      "resume": "This is version 2 of Ruadis eCommerce. TailwindCSS was replaced by styled-components and the views are implemented with a previous layout in figma. Following the MVC architecture.",
+      "urlSite": "https://stellular-unicorn-408b27.netlify.app/",
+      "urlCode": "https://github.com/Delegado007/frontend_ruadis",
+      "stack": [
+        "assets/html5.png",
+        "assets/javascript.png",
+        "assets/css3.png",
+        "assets/react.png",
+        "assets/webpack.png"
+      ],
+      "background": [
+        "assets/captures/ruadisv2_1.webp",
+        "assets/captures/ruadisv2_2.webp",
+        "assets/captures/ruadisv2_3.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "cardCategory": "Front End",
+      "cardHeading": "Ruadis e-commerce v1",
       "resume": "Freelance project developed with the purpose of giving remote access to all merchandise and books for sale to customers. The Web has elaborate techniques for form validation, logging, registration, useContext, TailwindCSS, darkMode, and more.",
       "urlSite": "https://webpack-ruadis.netlify.app",
       "urlCode": "https://github.com/Delegado007/webpack-ruadis-react",
@@ -19,27 +39,6 @@
         "assets/captures/ruadis1.webp",
         "assets/captures/ruadis2.webp",
         "assets/captures/ruadis3.webp"
-      ]
-    },
-    {
-      "id": 2,
-      "cardCategory": "Front End",
-      "cardHeading": "Petgram",
-      "resume": "A social network for pets? That's how it is. This social network was created to practice and replicate the Instagram social network. React.js technologies were used by applying customs hooks, lazy loading, dynamic import, useMemo, useRef, styled-components, GraphQL, testing with Cypress and more.",
-      "urlSite": "https://petgram-delegado.netlify.app",
-      "urlCode": "https://github.com/Delegado007/petgram",
-      "stack": [
-        "assets/html5.png",
-        "assets/javascript.png",
-        "assets/react.png",
-        "assets/styled-components.png",
-        "assets/graphql.png",
-        "assets/webpack.png"
-      ],
-      "background": [
-        "assets/captures/petgram1.webp",
-        "assets/captures/petgram2.webp",
-        "assets/captures/petgram3.webp"
       ]
     },
     {
@@ -65,6 +64,27 @@
     {
       "id": 4,
       "cardCategory": "Front End",
+      "cardHeading": "Petgram",
+      "resume": "A social network for pets? That's how it is. This social network was created to practice and replicate the Instagram social network. React.js technologies were used by applying customs hooks, lazy loading, dynamic import, useMemo, useRef, styled-components, GraphQL, testing with Cypress and more.",
+      "urlSite": "https://petgram-delegado.netlify.app",
+      "urlCode": "https://github.com/Delegado007/petgram",
+      "stack": [
+        "assets/html5.png",
+        "assets/javascript.png",
+        "assets/react.png",
+        "assets/styled-components.png",
+        "assets/graphql.png",
+        "assets/webpack.png"
+      ],
+      "background": [
+        "assets/captures/petgram1.webp",
+        "assets/captures/petgram2.webp",
+        "assets/captures/petgram3.webp"
+      ]
+    },
+    {
+      "id": 5,
+      "cardCategory": "Front End",
       "cardHeading": "OyeMusica",
       "resume": "First web made with React.js and Bootstrap 5, this web was created to practice form validation, loggin simulation, registration, handling of global states with Context API, useState, useEffect, local storage, routes with react-router-dom, etc.",
       "urlSite": "https://oye-musica-delegado.netlify.app",
@@ -83,9 +103,9 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "cardCategory": "Back End",
-      "cardHeading": "Ruadis DB",
+      "cardHeading": "Ruadis BackEnd",
       "resume": "The database for Ruadis is built with Node.js and runs on PostgreSQL using the Sequelize ORM. It has authentication and authorization for the user, all this thanks to JSON Web Tokens and passport.js technology.",
       "urlSite": "https://serene-ocean-03988.herokuapp.com/",
       "urlCode": "https://github.com/Delegado007/ruadis_back_end",

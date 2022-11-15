@@ -81,3 +81,23 @@ export const H3 = styled.h3`
     font-size: 1rem;
   } 
 `
+
+export const ContainerImg = styled.article`
+  border-radius: 5px;
+  box-shadow: 7px 10px 25px -1px rgba(222, 178, 2,0.75);
+  -webkit-box-shadow: 7px 10px 25px -1px rgba(222, 178, 2,0.75); 
+  z-index: 1000;
+
+`
+
+export const Img = styled.img`
+  display: inline;
+  float: right;
+  border-radius: 5px;
+  height: 250px;
+  z-index: 1000;
+  filter: grayscale(58%) sepia(77%) brightness(108%) hue-rotate(338deg) saturate(171%) contrast(95%);
+  -webkit-filter: grayscale(58%) sepia(77%) brightness(108%) hue-rotate(338deg) saturate(171%) contrast(95%);
+  -moz-filter: grayscale(58%) sepia(77%) brightness(108%) hue-rotate(338deg) saturate(171%) contrast(95%);
+  
+`

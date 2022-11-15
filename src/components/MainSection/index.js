@@ -1,10 +1,13 @@
 import React from "react";
-import { Article, H1, Span, Section, H3 } from './styles';
+import { Article, H1, Span, Section, H3, ContainerImg, Img } from './styles';
 
 export const MainSection = () => {
 
   return (
     <Section id="main_section">
+      <ContainerImg>
+        <Img src="assets/profile.jpeg"></Img>
+      </ContainerImg>
       <Article className="rubberBand">
         <H1>
           <Span aria-hidden="true">H</Span>
