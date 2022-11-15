@@ -34,7 +34,7 @@ export const MenuVertical = ({ open }) => {
             <Span>My skills</Span>
           </Li>
         </a>
-        <a href="https://drive.google.com/file/d/1A6Zuh8nJFGPbIBI-aTTPKZdIi-P7-x_E/view" target="_blank" onClick={handleSetOpen}>
+        <a href="https://drive.google.com/file/d/1ahFHUhO3GutoPFm9RirGs4b-Jyx16h2c/view?usp=sharing" target="_blank" onClick={handleSetOpen}>
           <Li>
             <Span>Resume</Span>
           </Li>
