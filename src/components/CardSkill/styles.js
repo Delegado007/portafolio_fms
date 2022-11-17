@@ -22,7 +22,6 @@ export const Card = styled.div`
   text-align: center;
   overflow: hidden;
   transition: 0.5s;
-  cursor: pointer;
   animation: ${jackInTheBox};
   animation-duration: 1.1s;  
   &:hover {

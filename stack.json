@@ -90,6 +90,27 @@
       "percent": "70",
       "urlFile": "assets/node.png",
       "fill": "#8fc708"
+    },
+    {
+      "id": 14,
+      "technology": "JsonWebTokens",
+      "percent": "70",
+      "urlFile": "assets/jsonWebTokens.png",
+      "fill": "#8fc708"
+    },
+    {
+      "id": 15,
+      "technology": "Passport Auth",
+      "percent": "70",
+      "urlFile": "assets/passport.png",
+      "fill": "#8fc708"
+    },
+    {
+      "id": 16,
+      "technology": "TypeScript",
+      "percent": "70",
+      "urlFile": "assets/typescript.png",
+      "fill": "#8fc708"
     }
   ]
 }
