@@ -5,7 +5,7 @@
       "cardCategory": "Front End",
       "cardHeading": "Ruadis e-commerce v2",
       "resume": "This is version 2 of Ruadis eCommerce. TailwindCSS was replaced by styled-components and the views are implemented with a previous layout in figma. Following the MVC architecture.",
-      "urlSite": "https://stellular-unicorn-408b27.netlify.app/",
+      "urlSite": "https://ruadis-v2.netlify.app/",
       "urlCode": "https://github.com/Delegado007/frontend_ruadis",
       "stack": [
         "assets/html5.png",
